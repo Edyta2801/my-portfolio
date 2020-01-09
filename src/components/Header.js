@@ -10,12 +10,13 @@ class Header extends React.Component {
             <header className='component'>
                 <Grid>
                     <Row between="md" middle="xs">
-                        <Col md={1} lg={2}>
+                        <Col>
                             <Link to='/'>
                                 <div className='logo'>
                                     {/* <Icon name='laptop-code' /> */}
                                     <div className='name'>Edyta Szarowska</div>
-                                    <div className='nameJunior'> Junior Front-End Developer</div>
+                                    <div className='nameJunior'> Junior Front-End</div>
+                                    <div className='nameJunior'> Developer</div>
                                 </div>
                             </Link>
                         </Col>
