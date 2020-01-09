@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Projects from './components/pages/Projects';
 import Contact from './components/pages/Contact';
 import About from './components/pages/About';
+import './components/styles/App.scss';
 
 class App extends React.Component {
   render() {

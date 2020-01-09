@@ -1,21 +1,21 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import styles from '../components/styles/Header.scss';
+import '../components/styles/Header.scss';
 // import Icon from '../../common/Icon/Icon';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
 class Header extends React.Component {
     render() {
         return (
-            <header className={styles.component}>
+            <header className='component'>
                 <Grid>
                     <Row between="md" middle="xs">
                         <Col md={1} lg={2}>
                             <Link to='/'>
-                                <div className={styles.logo}>
+                                <div className='logo'>
                                     {/* <Icon name='laptop-code' /> */}
-                                    <div className={styles.name}>Edyta Szarowska</div>
-                                    <div className={styles.nameJunior}> Junior Front-End Developer</div>
+                                    <div className='name'>Edyta Szarowska</div>
+                                    <div className='nameJunior'> Junior Front-End Developer</div>
                                 </div>
                             </Link>
                         </Col>
@@ -26,7 +26,6 @@ class Header extends React.Component {
                                 <NavLink to='/contact' activeClassName='active'>Contact</NavLink>
                             </nav>
                         </Col>
-
                     </Row>
                 </Grid>
             </header>
