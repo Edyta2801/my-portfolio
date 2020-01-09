@@ -1,9 +1,10 @@
-@import '../styles/settings.scss';
+@import "../styles/settings.scss";
 
 .component {
   background: $color-dark;
   padding: ($base-size * 1.5) 0;
   color: $color-light;
+  font-family: $font-c;
 
   nav {
     font-size: ($base-size * 1.3);
@@ -16,6 +17,7 @@
       margin-right: ($base-size * 3);
       padding-bottom: ($base-size / 2);
       transition: color 0.4s linear;
+      text-decoration: none;
       &:last-of-type {
         margin-right: 0;
       }
@@ -26,31 +28,30 @@
         border-bottom: 4px solid $color-primary;
       }
     }
-
   }
-
 }
 
 .logo {
   color: $color-light;
   // font-size: 24px;
 
-  .nameJunior{
-    color:red;
-   text-align: center;}
+  .nameJunior {
+    color:$color-primary;
+    text-align: center;
+  }
+  font-size:($base-size);
+  // font-family: $font-text;
 }
 
 .name {
   position: relative;
   top: ($base-size / -4);
   left: ($base-size / 4);
-  font-family: $font-header;
+  // font-family: $font-text;
   text-transform: none;
-  font-size: ($base-size );
+  font-size:14px; 
   text-align: center;
-
-
-
+  color: $color-light;
 }
 
 .contact {
@@ -61,19 +62,16 @@
 }
 
 @media (max-width: 767px) {
-
-  .component  {
+  .component {
     text-align: center;
 
     nav {
       margin-top: ($base-size * 1.5);
     }
-
   }
 
   .contact {
     text-align: center;
     margin-top: ($base-size * 1.5);
   }
-
 }
