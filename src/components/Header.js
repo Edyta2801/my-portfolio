@@ -33,41 +33,26 @@ class Header extends React.Component {
     }
     render() {
         return (
-            <header className='component'>
-                <button className="hamburger hamburger--spin mobile" type="button" onClick={this.toggleMenu}>
-                    <span className="hamburger-box">
-                        <span className="hamburger-inner"></span>
-                    </span>
-                </button>
-                <Grid>
-                    <Row between="md" middle="xs">
-                        <Col>
-                            <Link to='/'>
-                                <div className='logo'>
-                                    {/* <Icon name='laptop-code' /> */}
-                                    <div className='name'>Edyta Szarowska</div>
-                                    <div className='nameJunior'> Junior Front-End</div>
-                                    <div className='nameJunior'> Developer</div>
-                                </div>
-                            </Link>
-                        </Col>
-                        <Col md={6}>
-                            <nav>
-                                <div className="overlay mobile">
-                                    <div className="submenus">
-                                        <div className="work-mobile"><Link to="/" className="active">Work</Link></div>
-                                        <div className="articles-mobile"><Link to="/articles">Articles</Link></div>
-                                        <div className="about-mobile"><Link to="/about">About</Link></div>
-                                    </div>
-                                </div>
-                                <NavLink to='/projects' activeClassName='active'>Projects</NavLink>
-                                <NavLink to='/about' activeClassName='active'>About</NavLink>
-                                <NavLink to='/contact' activeClassName='active'>Contact</NavLink>
-                            </nav>
-                        </Col>
-                    </Row>
-                </Grid>
-            </header >
+              <div className="navigation">
+            <div className="anne"><Link to="/" className="active">Anne Lee</Link></div>
+            <button className="hamburger hamburger--spin mobile" type="button" onClick={this.toggleMenu}>
+              <span className="hamburger-box">
+                <span className="hamburger-inner"></span>
+              </span>
+            </button>
+            <div className="overlay mobile">
+              <div className="submenus">
+                <div className="work-mobile"><Link to="/" className="active">Work</Link></div>
+                <div className="articles-mobile"><Link to="/articles">Articles</Link></div>
+                <div className="about-mobile"><Link to="/about">About</Link></div>
+              </div>
+            </div>
+            <div className="navigation-sub">
+              <div className="work"><Link to="/" className="active">Work</Link></div>
+              <div className="articles"><Link to="/articles">Articles</Link></div>
+              <div className="about"><Link to="/about">About</Link></div>
+            </div>
+          </div>
         );
     }
 }
