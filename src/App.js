@@ -7,7 +7,7 @@ import Projects from './components/pages/Projects';
 import Contact from './components/pages/Contact';
 import About from './components/pages/About';
 import Footer from './components/Footer';
-import './components/styles/App.scss';
+import './components/styles/App-style.css';
 
 class App extends React.Component {
   render() {

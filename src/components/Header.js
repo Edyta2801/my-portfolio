@@ -1,6 +1,6 @@
 import React from 'react';
 import {  Link } from 'react-router-dom';
-import '../components/styles/Header.scss';
+// import '../components/styles/Header.scss';
 // import Icon from '../../common/Icon/Icon';
 // import { Col } from 'react-flexbox-grid';
 import '../components/styles/App-style.css';
