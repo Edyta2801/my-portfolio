@@ -1,8 +1,8 @@
 import React from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import {  Link } from 'react-router-dom';
 import '../components/styles/Header.scss';
 // import Icon from '../../common/Icon/Icon';
-import { Grid, Row, Col } from 'react-flexbox-grid';
+// import { Col } from 'react-flexbox-grid';
 import '../components/styles/App-style.css';
 import '../components/styles/Responsive.css';
 import '../components/styles/Hamburgers.css';
