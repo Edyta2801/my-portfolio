@@ -1,8 +1,8 @@
 
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import './App.css';
-import './Responsive.css';
+import '../components/styles/App-style.css';
+import '../components/styles/Responsive.css';
 
 class Project extends Component {
     state = {
