@@ -13,7 +13,7 @@ class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
-        <MainLayout />
+        <MainLayout>
         <AnimatedSwitch
         /* eslint no-restricted-globals:0 */
         location={location}
@@ -31,7 +31,7 @@ class App extends React.Component {
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/about" component={About} />
         </AnimatedSwitch>
-        <MainLayout />
+        </MainLayout>
       </BrowserRouter>
     )
   }
