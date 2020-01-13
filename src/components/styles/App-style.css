@@ -284,6 +284,9 @@
       justify-content: center;
       width: 100%;
   }
+  
+
+
 
   .footer .social-links .social {
       background-color: #000000;
@@ -291,6 +294,7 @@
       width: 32px;
       height: 32px;
       margin-right: 8px;
+   
   }
 
   .footer .social-links .social-last {
@@ -310,19 +314,19 @@
   .footer .social-links .social .linkedin {
       width: 16px;
       height: 14px;
-      padding: 8px 8px 10px 8px;
+      /* padding: 8px 8px 10px 8px; */
   }
 
-  .footer .social-links .social .medium {
+  .footer .social-links .social .github {
       width: 16px;
-      height: 12px;
-      padding: 10px 8px 10px 8px;
+      height: 17px;
+      /* padding: 10px 8px 10px 8px; */
   }
 
   .footer .social-links .social-last .email {
       width: 16px;
       height: 12px;
-      padding: 10px 8px 10px 8px;
+      /* padding: 10px 8px 10px 8px; */
   }
 
   .footer .footer-copyright {
