@@ -15,7 +15,8 @@ class App extends React.Component {
       <BrowserRouter>
         <MainLayout />
         <AnimatedSwitch
-
+        /* eslint no-restricted-globals:0 */
+        location={location}
           atEnter={{ opacity: 0, offset: 200 }}
           atLeave={{ opacity: 0 }}
           atActive={{ opacity: 1, offset: 0 }}

@@ -6,8 +6,6 @@ import {  Link } from 'react-router-dom';
 import '../components/styles/App-style.css';
 import '../components/styles/Responsive.css';
 import '../components/styles/Hamburgers.css';
-
-import Project from '../components/Project.js';
 import projectone from '../images/projectone.png';
 import projecttwo from '../images/projecttwo.png';
 import projectthree from '../images/projectthree.png';
@@ -73,122 +71,6 @@ class Header extends React.Component {
           <div className="speciality">
             UX UI / Front-End Development
           </div>
-        </section>
-        <section className="projects">
-          {window.innerWidth<=1009 ?
-            <div className="left">
-              <p className="projects-intro">
-                I design intuitive digital experiences<br/>in which <span className="bold">every element serves a purpose</span>.<br/>My designs give form to <span className="bold">product visions</span>,<br/>and <span className="bold">arouses emotion</span> in billions of users.
-              </p>
-              <Project
-                aos=""
-                image={this.state.projectOneImage}
-                link="/prismvideo"
-                hmwClass="hmw"
-                class="project-default"
-                hmw={["How might we improve", <br/>, "the usability of the app", <br/>, "for Vlog creators?"]}
-                color="rgba(11, 156, 150, 0.95)"
-                title="PRISM Video Editing Redesign"
-                category="Mobile Application"
-                index="0"
-              />
-              <Project
-                aos="fade-up"
-                image={this.state.projectThreeImage}
-                link="/schole"
-                hmwClass="hmw hmw-exception"
-                class="project-last"
-                hmw={["How might we create value", <br/>, "for the content providers", <br/>, "of an education platform?"]}
-                color="rgba(233, 111, 94, 0.95)"
-                title="Scholé Website Renewal"
-                category="PC / Mobile Web"
-                index="1"
-              />
-            </div> :
-            <div className="left">
-              <p className="projects-intro">
-                I design intuitive digital experiences<br/>in which <span className="bold">every element serves a purpose</span>.<br/>My designs give form to <span className="bold">product visions</span>,<br/>and <span className="bold">arouses emotion</span> in billions of users.
-              </p>
-              <Project
-                aos=""
-                image={this.state.projectOneImage}
-                link="/prismvideo"
-                hmwClass="hmw"
-                class="project-default"
-                hmw={["How might we improve", <br/>, "the usability of the app", <br/>, "for Vlog creators?"]}
-                color="rgba(11, 156, 150, 0.95)"
-                title="PRISM Video Editing Redesign"
-                category="Mobile Application"
-                index="0"
-              />
-              <Project
-                aos=""
-                image={this.state.projectThreeImage}
-                link="/schole"
-                hmwClass="hmw"
-                class="project-last"
-                hmw={["How might we create value", <br/>, "for the content providers", <br/>, "of an education platform?"]}
-                color="rgba(233, 111, 94, 0.95)"
-                title="Scholé Website Renewal"
-                category="PC / Mobile Web"
-                index="1"
-              />
-            </div>
-          }
-          {window.innerWidth<=1009 ?
-            <div className="right">
-              <Project
-                aos="fade-up"
-                image={this.state.projectTwoImage}
-                link="/prismlayout"
-                hmwClass="hmw hmw-exception"
-                class="project-default"
-                hmw={["How might we create", <br/>, "a layout that is scalable", <br/>, "and intuitive to use?"]}
-                color="rgba(251, 192, 96, 0.95)"
-                title="PRISM Live Layout Redesign"
-                category="PC Application"
-                index="2"
-              />
-              <Project
-                aos="fade-up"
-                image={this.state.projectFourImage}
-                link="/framer30"
-                hmwClass="hmw hmw-exception"
-                class="project-default"
-                hmw={["How might we create", <br/>, "interactive prototypes", <br/>, "with React.js?"]}
-                color="rgba(114, 164, 238, 0.95)"
-                title="30 Days of Framer X"
-                category="Interactive Prototypes"
-                index="3"
-              />
-            </div> :
-            <div className="right">
-              <Project
-                aos=""
-                image={this.state.projectTwoImage}
-                link="/prismlayout"
-                hmwClass="hmw"
-                class="project-default"
-                hmw={["How might we create", <br/>, "a layout that is scalable", <br/>, "and intuitive to use?"]}
-                color="rgba(251, 192, 96, 0.95)"
-                title="PRISM Live Layout Redesign"
-                category="PC Application"
-                index="2"
-              />
-              <Project
-                aos=""
-                image={this.state.projectFourImage}
-                link="/framer30"
-                hmwClass="hmw"
-                class="project-default"
-                hmw={["How might we create", <br/>, "interactive prototypes", <br/>, "with React.js?"]}
-                color="rgba(114, 164, 238, 0.95)"
-                title="30 Days of Framer X"
-                category="Interactive Prototypes"
-                index="3"
-              />
-            </div>
-          }
         </section>
       </div>
     );
