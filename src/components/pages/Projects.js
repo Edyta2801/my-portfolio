@@ -6,6 +6,7 @@ import github from '../../images/GitHub-logo.png';
 import '../../components/styles/Responsive.css';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
+import * as Icon from "react-feather";
 
 
 const images = [
@@ -50,8 +51,34 @@ class Projects extends React.Component {
                                         <img className="github" src={this.state.github} alt="GitHub Logo" />
                                     </a>
                                 </div>
+                                <div>
+                                    <button type="button" onClick={() => this.setState({ isOpen: true })}>
+                                       <Icon.ZoomIn/></button>
+
+                                    {isOpen && (
+                                        <Lightbox
+                                            mainSrc={images[photoIndex]}
+                                            nextSrc={images[(photoIndex + 1) % images.length]}
+                                            prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+                                            onCloseRequest={() => this.setState({ isOpen: false })}
+                                            onMovePrevRequest={() =>
+                                                this.setState({
+                                                    photoIndex: (photoIndex + images.length - 1) % images.length,
+                                                })
+                                            }
+                                            onMoveNextRequest={() =>
+                                                this.setState({
+                                                    photoIndex: (photoIndex + 1) % images.length,
+                                                })
+                                            }
+                                        />
+                                    )}
+                                </div>
                             </div>
                         </div>
+
+                    </Card>
+                    <Card>
                         <div>
                             <button type="button" onClick={() => this.setState({ isOpen: true })}>
                                 Open Lightbox
@@ -76,11 +103,6 @@ class Projects extends React.Component {
                                 />
                             )}
                         </div>
-                        );
-                      }
-                    }
-                    </Card>
-                    <Card>
                         <Card.Img variant="top" src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
                         <Card.Body>
                             <Card.Title>Card title that wraps to a new line</Card.Title>
