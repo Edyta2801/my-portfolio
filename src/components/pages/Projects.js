@@ -5,7 +5,7 @@ import linkedin from '../../images/linkedin-logo.png';
 import github from '../../images/GitHub-logo.png';
 import '../../components/styles/Responsive.css';
 import Lightbox from 'react-image-lightbox';
-import 'react-image-lightbox/style.css'; 
+import 'react-image-lightbox/style.css';
 
 
 const images = [
@@ -13,7 +13,7 @@ const images = [
     '//placekitten.com/4000/3000',
     '//placekitten.com/800/1200',
     '//placekitten.com/1500/1500',
-  ];
+];
 
 
 class Projects extends React.Component {
