@@ -12,7 +12,7 @@ import styles from '../src/components/styles/App.scss';
 class App extends React.Component {
   render() {
     return (
-      <BrowserRouter>
+     <BrowserRouter>
         <MainLayout>
         <AnimatedSwitch
         /* eslint no-restricted-globals:0 */
