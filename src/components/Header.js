@@ -1,5 +1,5 @@
 import React from 'react';
-import {  Link } from 'react-router-dom';
+import {  NavLink } from 'react-router-dom';
 // import '../components/styles/Header.scss';
 // import Icon from '../../common/Icon/Icon';
 // import { Col } from 'react-flexbox-grid';
@@ -39,7 +39,7 @@ class Header extends React.Component {
       <div className="body">
         <section className="header">
           <div className="navigation">
-            <div className="anne"><Link to="/" className="active">Edyta Szarowska</Link></div>
+            <div className="anne"><NavLink exact to="/">Edyta Szarowska</NavLink></div>
             <button className="hamburger hamburger--spin mobile" type="button" onClick={this.toggleMenu}>
               <span className="hamburger-box">
                 <span className="hamburger-inner"></span>
@@ -47,15 +47,15 @@ class Header extends React.Component {
             </button>
             <div className="overlay mobile">
               <div className="submenus">
-                <div className="work-mobile"><Link to="/" className="active">Projects</Link></div>
-                <div className="articles-mobile"><Link to="/contact"  className="active">Contact</Link></div>
-                <div className="about-mobile"><Link to="/about" className="active">About</Link></div>
+                <div className="work-mobile"><NavLink exact to="/" onClick={this.toggleMenu}>Projects</NavLink></div>
+                <div className="articles-mobile"><NavLink exact to="/contact" onClick={this.toggleMenu}>Contact</NavLink></div>
+                <div className="about-mobile"><NavLink exact to="/about"onClick={this.toggleMenu}>About</NavLink></div>
               </div>
             </div>
             <div className="navigation-sub">
-              <div className="work"><Link to="/" className="active">Projects</Link></div>
-              <div className="articles"><Link to="/contact" className="active" >Contact</Link></div>
-              <div className="about"><Link to="/about" className="active">About</Link></div>
+              <div className="work"><NavLink exact to="/">Projects</NavLink></div>
+              <div className="articles"><NavLink exact to="/contact" >Contact</NavLink></div>
+              <div className="about"><NavLink exact to="/about">About</NavLink></div>
             </div>
           </div>
           <div className="speciality">
