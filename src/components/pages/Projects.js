@@ -6,7 +6,7 @@ import { Card, CardColumns } from 'react-bootstrap';
 class Projects extends React.Component {
     render() {
         return (
-            <div>
+            <div className="body">
             <CardColumns>
                     <Card>
                         <Card.Img variant="top" src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />

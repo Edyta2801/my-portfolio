@@ -6,18 +6,11 @@ import {  Link } from 'react-router-dom';
 import '../components/styles/App-style.css';
 import '../components/styles/Responsive.css';
 import '../components/styles/Hamburgers.css';
-import projectone from '../images/projectone.png';
-import projecttwo from '../images/projecttwo.png';
-import projectthree from '../images/projectthree.png';
-import projectfour from '../images/projectfour.png';
+
 
 
 class Header extends React.Component {
   state = {
-    projectOneImage: projectone,
-    projectTwoImage: projecttwo,
-    projectThreeImage: projectthree,
-    projectFourImage: projectfour,
     hamburgerState: "off"
   }
 
@@ -55,14 +48,14 @@ class Header extends React.Component {
             <div className="overlay mobile">
               <div className="submenus">
                 <div className="work-mobile"><Link to="/" className="active">Projects</Link></div>
-                <div className="articles-mobile"><Link to="/contact">Contact</Link></div>
-                <div className="about-mobile"><Link to="/about">About</Link></div>
+                <div className="articles-mobile"><Link to="/contact"  className="active">Contact</Link></div>
+                <div className="about-mobile"><Link to="/about" className="active">About</Link></div>
               </div>
             </div>
             <div className="navigation-sub">
               <div className="work"><Link to="/" className="active">Projects</Link></div>
-              <div className="articles"><Link to="/contact">Contact</Link></div>
-              <div className="about"><Link to="/about">About</Link></div>
+              <div className="articles"><Link to="/contact" className="active" >Contact</Link></div>
+              <div className="about"><Link to="/about" className="active">About</Link></div>
             </div>
           </div>
           <div className="speciality">
