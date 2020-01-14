@@ -6,7 +6,8 @@ import github from '../../images/GitHub-logo.png';
 import '../../components/styles/Responsive.css';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
-import * as Icon from "react-feather";
+import {ZoomIn, Link}  from 'react-feather';
+
 
 
 const images = [
@@ -39,21 +40,16 @@ class Projects extends React.Component {
                         <Card.Body>
                             <Card.Title>Card title that wraps to a new line</Card.Title>
                         </Card.Body>
-                        <div class="brick-description">
-                            <div className="social-links">
-                                <div className="social">
+                        <div class="icon-description">
+                            <div className="social-icons">
+                                <div className="icon">
                                     <a href="https://www.linkedin.com/in/edyta-szarowska/" target="_blank" rel="noopener noreferrer">
-                                        <img className="linkedin" src={this.state.linkedin} alt="Linkedin Logo" />
+                                        <Link />
                                     </a>
                                 </div>
-                                <div className="social">
-                                    <a href="https://github.com/Edyta2801" target="_blank" rel="noopener noreferrer">
-                                        <img className="github" src={this.state.github} alt="GitHub Logo" />
-                                    </a>
-                                </div>
-                                <div>
+                                <div className="icon">
                                     <button type="button" onClick={() => this.setState({ isOpen: true })}>
-                                       <Icon.ZoomIn/></button>
+                                        <ZoomIn /></button>
 
                                     {isOpen && (
                                         <Lightbox
