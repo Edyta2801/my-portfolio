@@ -22,12 +22,12 @@ class Footer extends Component {
         <div className="social-links">
           <div className="social">
             <a href="https://www.linkedin.com/in/edyta-szarowska/" target="_blank" rel="noopener noreferrer">
-              <img className="linkedin" src={this.state.linkedin} alt="Linkedin Logo"/>
+              <img className="linkedin" src={this.state.linkedin} alt="LinkedIn Logo"/>
             </a>
           </div>
           <div className="social">
             <a href="https://github.com/Edyta2801" target="_blank" rel="noopener noreferrer">
-              <img className="github" src={this.state.github} alt="Medium Logo"/>
+              <img className="github" src={this.state.github} alt="GitHub Logo"/>
             </a>
           </div>
           <div className="social-last">
