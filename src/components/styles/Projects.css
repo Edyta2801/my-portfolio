@@ -202,8 +202,11 @@
     flex-direction: column;
     color: #fff;
     opacity: 1;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     width: 100%;
+    transition: all .4s ease-out;
+    transform-origin: 0;
+
 }
 
 .icon {
