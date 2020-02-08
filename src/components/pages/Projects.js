@@ -38,6 +38,36 @@ const images4 = [
     '//placekitten.com/800/1200',
     '//placekitten.com/1500/1500',
 ]
+const images5 = [
+    '//placekitten.com/1500/500',
+    '//placekitten.com/4000/3000',
+    '//placekitten.com/800/1200',
+    '//placekitten.com/1500/1500',
+];
+const images6 = [
+    '//placekitten.com/1500/500',
+    '//placekitten.com/4000/3000',
+    '//placekitten.com/800/1200',
+    '//placekitten.com/1500/1500',
+];
+const images7 = [
+    '//placekitten.com/1500/500',
+    '//placekitten.com/4000/3000',
+    '//placekitten.com/800/1200',
+    '//placekitten.com/1500/1500',
+];
+const images8 = [
+    '//placekitten.com/1500/500',
+    '//placekitten.com/4000/3000',
+    '//placekitten.com/800/1200',
+    '//placekitten.com/1500/1500',
+];
+const images9 = [
+    '//placekitten.com/1500/500',
+    '//placekitten.com/4000/3000',
+    '//placekitten.com/800/1200',
+    '//placekitten.com/1500/1500',
+]
 
 
 
@@ -279,18 +309,18 @@ class Projects extends React.Component {
 
                                         {isOpen && (
                                             <Lightbox
-                                                mainSrc={images4[photoIndex]}
-                                                nextSrc={images4[(photoIndex + 1) % images4.length]}
-                                                prevSrc={images4[(photoIndex + images4.length - 1) % images4.length]}
+                                                mainSrc={images5[photoIndex]}
+                                                nextSrc={images5[(photoIndex + 1) % images5.length]}
+                                                prevSrc={images5[(photoIndex + images5.length - 1) % images5.length]}
                                                 onCloseRequest={() => this.setState({ isOpen: false })}
                                                 onMovePrevRequest={() =>
                                                     this.setState({
-                                                        photoIndex: (photoIndex + images4.length - 1) % images4.length,
+                                                        photoIndex: (photoIndex + images5.length - 1) % images5.length,
                                                     })
                                                 }
                                                 onMoveNextRequest={() =>
                                                     this.setState({
-                                                        photoIndex: (photoIndex + 1) % images4.length,
+                                                        photoIndex: (photoIndex + 1) % images5.length,
                                                     })
                                                 }
                                             />
@@ -321,18 +351,18 @@ class Projects extends React.Component {
 
                                         {isOpen && (
                                             <Lightbox
-                                                mainSrc={images4[photoIndex]}
-                                                nextSrc={images4[(photoIndex + 1) % images4.length]}
-                                                prevSrc={images4[(photoIndex + images4.length - 1) % images4.length]}
+                                                mainSrc={images6[photoIndex]}
+                                                nextSrc={images6[(photoIndex + 1) % images6.length]}
+                                                prevSrc={images6[(photoIndex + images6.length - 1) % images6.length]}
                                                 onCloseRequest={() => this.setState({ isOpen: false })}
                                                 onMovePrevRequest={() =>
                                                     this.setState({
-                                                        photoIndex: (photoIndex + images4.length - 1) % images4.length,
+                                                        photoIndex: (photoIndex + images6.length - 1) % images6.length,
                                                     })
                                                 }
                                                 onMoveNextRequest={() =>
                                                     this.setState({
-                                                        photoIndex: (photoIndex + 1) % images4.length,
+                                                        photoIndex: (photoIndex + 1) % images6.length,
                                                     })
                                                 }
                                             />
@@ -362,18 +392,18 @@ class Projects extends React.Component {
 
                                         {isOpen && (
                                             <Lightbox
-                                                mainSrc={images4[photoIndex]}
-                                                nextSrc={images4[(photoIndex + 1) % images4.length]}
-                                                prevSrc={images4[(photoIndex + images4.length - 1) % images4.length]}
+                                                mainSrc={images7[photoIndex]}
+                                                nextSrc={images7[(photoIndex + 1) % images7.length]}
+                                                prevSrc={images7[(photoIndex + images7.length - 1) % images7.length]}
                                                 onCloseRequest={() => this.setState({ isOpen: false })}
                                                 onMovePrevRequest={() =>
                                                     this.setState({
-                                                        photoIndex: (photoIndex + images4.length - 1) % images4.length,
+                                                        photoIndex: (photoIndex + images7.length - 1) % images7.length,
                                                     })
                                                 }
                                                 onMoveNextRequest={() =>
                                                     this.setState({
-                                                        photoIndex: (photoIndex + 1) % images4.length,
+                                                        photoIndex: (photoIndex + 1) % images7.length,
                                                     })
                                                 }
                                             />
@@ -403,18 +433,18 @@ class Projects extends React.Component {
 
                                         {isOpen && (
                                             <Lightbox
-                                                mainSrc={images4[photoIndex]}
-                                                nextSrc={images4[(photoIndex + 1) % images4.length]}
-                                                prevSrc={images4[(photoIndex + images4.length - 1) % images4.length]}
+                                                mainSrc={images8[photoIndex]}
+                                                nextSrc={images8[(photoIndex + 1) % images8.length]}
+                                                prevSrc={images8[(photoIndex + images8.length - 1) % images8.length]}
                                                 onCloseRequest={() => this.setState({ isOpen: false })}
                                                 onMovePrevRequest={() =>
                                                     this.setState({
-                                                        photoIndex: (photoIndex + images4.length - 1) % images4.length,
+                                                        photoIndex: (photoIndex + images8.length - 1) % images8.length,
                                                     })
                                                 }
                                                 onMoveNextRequest={() =>
                                                     this.setState({
-                                                        photoIndex: (photoIndex + 1) % images4.length,
+                                                        photoIndex: (photoIndex + 1) % images8.length,
                                                     })
                                                 }
                                             />
