@@ -19,6 +19,24 @@ const images1 = [
     '//placekitten.com/4000/3000',
     '//placekitten.com/800/1200',
     '//placekitten.com/1500/1500',
+];
+const images2 = [
+    '//placekitten.com/1500/500',
+    '//placekitten.com/4000/3000',
+    '//placekitten.com/800/1200',
+    '//placekitten.com/1500/1500',
+]
+const images3 = [
+    '//placekitten.com/1500/500',
+    '//placekitten.com/4000/3000',
+    '//placekitten.com/800/1200',
+    '//placekitten.com/1500/1500',
+]
+const images4 = [
+    '//placekitten.com/1500/500',
+    '//placekitten.com/4000/3000',
+    '//placekitten.com/800/1200',
+    '//placekitten.com/1500/1500',
 ]
 
 
@@ -125,6 +143,38 @@ class Projects extends React.Component {
                     <Card>
                         <Card.Img variant="top" src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
                         <Card.Body>
+                            <div class="icon-description">
+                                <div className="social-icons">
+                                    <div className="icon">
+                                        <a href="https://www.linkedin.com/in/edyta-szarowska/" target="_blank" rel="noopener noreferrer">
+                                            <Link />
+                                        </a>
+                                    </div>
+                                    <div className="icon">
+                                        <button type="button" onClick={() => this.setState({ isOpen: true })}>
+                                            <ZoomIn /></button>
+
+                                        {isOpen && (
+                                            <Lightbox
+                                                mainSrc={images2[photoIndex]}
+                                                nextSrc={images2[(photoIndex + 1) % images2.length]}
+                                                prevSrc={images2[(photoIndex + images2.length - 1) % images2.length]}
+                                                onCloseRequest={() => this.setState({ isOpen: false })}
+                                                onMovePrevRequest={() =>
+                                                    this.setState({
+                                                        photoIndex: (photoIndex + images2.length - 1) % images2.length,
+                                                    })
+                                                }
+                                                onMoveNextRequest={() =>
+                                                    this.setState({
+                                                        photoIndex: (photoIndex + 1) % images2.length,
+                                                    })
+                                                }
+                                            />
+                                        )}
+                                    </div>
+                                </div>
+                            </div>
                             <Card.Title>Card title that wraps to a new line</Card.Title>
                             <Card.Text>
 
@@ -134,6 +184,40 @@ class Projects extends React.Component {
                     <Card>
 
                         <Card.Body>
+                        <div class="icon-description">
+                                <div className="social-icons">
+                                    <div className="icon">
+                                        <a href="https://www.linkedin.com/in/edyta-szarowska/" target="_blank" rel="noopener noreferrer">
+                                            <Link />
+                                        </a>
+                                    </div>
+                                    <div className="icon">
+                                        <button type="button" onClick={() => this.setState({ isOpen: true })}>
+                                            <ZoomIn /></button>
+
+                                        {isOpen && (
+                                            <Lightbox
+                                                mainSrc={images3[photoIndex]}
+                                                nextSrc={images3[(photoIndex + 1) % images3.length]}
+                                                prevSrc={images3[(photoIndex + images3.length - 1) % images3.length]}
+                                                onCloseRequest={() => this.setState({ isOpen: false })}
+                                                onMovePrevRequest={() =>
+                                                    this.setState({
+                                                        photoIndex: (photoIndex + images3.length - 1) % images3.length,
+                                                    })
+                                                }
+                                                onMoveNextRequest={() =>
+                                                    this.setState({
+                                                        photoIndex: (photoIndex + 1) % images3.length,
+                                                    })
+                                                }
+                                            />
+                                        )}
+                                    </div>
+                                </div>
+                            </div>
+
+]
                             <Card.Title>Card title that wraps to a new line</Card.Title>
                             <Card.Text>
 
@@ -144,6 +228,38 @@ class Projects extends React.Component {
                     <Card>
 
                         <Card.Body>
+                        <div class="icon-description">
+                                <div className="social-icons">
+                                    <div className="icon">
+                                        <a href="https://www.linkedin.com/in/edyta-szarowska/" target="_blank" rel="noopener noreferrer">
+                                            <Link />
+                                        </a>
+                                    </div>
+                                    <div className="icon">
+                                        <button type="button" onClick={() => this.setState({ isOpen: true })}>
+                                            <ZoomIn /></button>
+
+                                        {isOpen && (
+                                            <Lightbox
+                                                mainSrc={images4[photoIndex]}
+                                                nextSrc={images4[(photoIndex + 1) % images4.length]}
+                                                prevSrc={images4[(photoIndex + images4.length - 1) % images4.length]}
+                                                onCloseRequest={() => this.setState({ isOpen: false })}
+                                                onMovePrevRequest={() =>
+                                                    this.setState({
+                                                        photoIndex: (photoIndex + images4.length - 1) % images4.length,
+                                                    })
+                                                }
+                                                onMoveNextRequest={() =>
+                                                    this.setState({
+                                                        photoIndex: (photoIndex + 1) % images4.length,
+                                                    })
+                                                }
+                                            />
+                                        )}
+                                    </div>
+                                </div>
+                            </div>
                             <Card.Title>Card title that wraps to a new line</Card.Title>
                             <Card.Text>
 
