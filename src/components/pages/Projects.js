@@ -7,14 +7,17 @@ import '../../components/styles/Responsive.css';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 import { ZoomIn, Link } from 'react-feather';
+import blog_1 from '../../images/Projects/blog_1.png';
 
 const images = [
+    '//github.com/Edyta2801/javascript-blog/blob/master/images/screenshot_1.png',
     '//placekitten.com/1500/500',
     '//placekitten.com/4000/3000',
     '//placekitten.com/800/1200',
     '//placekitten.com/1500/1500',
 ];
 const images1 = [
+    '//github.com/Edyta2801/javascript-blog/blob/master/images/screenshot_1.png',
     '//placekitten.com/1500/500',
     '//placekitten.com/4000/3000',
     '//placekitten.com/800/1200',
@@ -124,7 +127,7 @@ class Projects extends React.Component {
                         </div>
                     </Card>
                     <Card>
-                        <Card.Img variant="top" src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+                        <Card.Img variant="top" src={blog_1} alt="blog" />
                         <Card.Body>
                             <div class="icon-description">
                                 <div className="social-icons">
