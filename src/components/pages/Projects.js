@@ -8,8 +8,7 @@ import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 import { ZoomIn, Link } from 'react-feather';
 import blog_1 from '../../images/Projects/blog_1.png';
-// import axios from 'axios';
-// import images1 from '../../data/database.js';
+import Images1 from '../../components/Images1';
 
 
 const images = [
@@ -18,10 +17,7 @@ const images = [
     '//placekitten.com/800/1200',
     '//placekitten.com/1500/1500',
 ];
-const images1 = [{
-    src:'./images/screenshot_1.png',
-    srcc:'./images/screenshot_1.png'
-}];
+
 const images2 = [
     '//placekitten.com/1500/500',
     '//placekitten.com/4000/3000',
@@ -77,24 +73,21 @@ class Projects extends React.Component {
             github: github,
             photoIndex: 0,
             isOpen: false,
-            images1: []
+            images1: [],
+            modalIsOpen: false,
+
         };
     }
-
-    // componentDidMount() {
-    //     axios.get('/api/images1')
-    //         .then(response => {
-    //             this.setState({
-    //                 images1: response.data
-    //             })
-    //         })
-    // }
+    toggleModal = () => {
+        this.setState(state => ({ modalIsOpen: !state.modalIsOpen }));
+    }
 
     render() {
         const { photoIndex, isOpen } = this.state;
 
         return (
             <div className="body">
+                <Images1/>
                 <CardColumns>
                     <Card>
                         <div className='wholeCard'>
@@ -149,25 +142,8 @@ class Projects extends React.Component {
                                     <div className="icon">
                                         <button type="button" onClick={() => this.setState({ isOpen: true })}>
                                             <ZoomIn /></button>
+                                        <Images1 />
 
-                                        {isOpen && (
-                                            <Lightbox
-                                                mainSrc={images1[photoIndex]}
-                                                nextSrc={images1[(photoIndex + 1) % images1.length]}
-                                                prevSrc={images1[(photoIndex + images1.length - 1) % images1.length]}
-                                                onCloseRequest={() => this.setState({ isOpen: false })}
-                                                onMovePrevRequest={() =>
-                                                    this.setState({
-                                                        photoIndex: (photoIndex + images1.length - 1) % images1.length,
-                                                    })
-                                                }
-                                                onMoveNextRequest={() =>
-                                                    this.setState({
-                                                        photoIndex: (photoIndex + 1) % images1.length,
-                                                    })
-                                                }
-                                            />
-                                        )}
                                     </div>
                                 </div>
                             </div>
