@@ -8,21 +8,20 @@ import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 import { ZoomIn, Link } from 'react-feather';
 import blog_1 from '../../images/Projects/blog_1.png';
+// import axios from 'axios';
+// import images1 from '../../data/database.js';
+
 
 const images = [
-    '//github.com/Edyta2801/javascript-blog/blob/master/images/screenshot_1.png',
     '//placekitten.com/1500/500',
     '//placekitten.com/4000/3000',
     '//placekitten.com/800/1200',
     '//placekitten.com/1500/1500',
 ];
-const images1 = [
-    '//github.com/Edyta2801/javascript-blog/blob/master/images/screenshot_1.png',
-    '//placekitten.com/1500/500',
-    '//placekitten.com/4000/3000',
-    '//placekitten.com/800/1200',
-    '//placekitten.com/1500/1500',
-];
+const images1 = [{
+    src:'./images/screenshot_1.png',
+    srcc:'./images/screenshot_1.png'
+}];
 const images2 = [
     '//placekitten.com/1500/500',
     '//placekitten.com/4000/3000',
@@ -78,8 +77,19 @@ class Projects extends React.Component {
             github: github,
             photoIndex: 0,
             isOpen: false,
-        }
+            images1: []
+        };
     }
+
+    // componentDidMount() {
+    //     axios.get('/api/images1')
+    //         .then(response => {
+    //             this.setState({
+    //                 images1: response.data
+    //             })
+    //         })
+    // }
+
     render() {
         const { photoIndex, isOpen } = this.state;
 
@@ -92,7 +102,7 @@ class Projects extends React.Component {
                             <Card.Body>
                                 <Card.Title>Card title that wraps to a new line</Card.Title>
                             </Card.Body>
-                            <div class="icon-description">
+                            <div className="icon-description">
                                 <div className="social-icons">
                                     <div className="icon">
                                         <a href="https://www.linkedin.com/in/edyta-szarowska/" target="_blank" rel="noopener noreferrer">
@@ -129,7 +139,7 @@ class Projects extends React.Component {
                     <Card>
                         <Card.Img variant="top" src={blog_1} alt="blog" />
                         <Card.Body>
-                            <div class="icon-description">
+                            <div className="icon-description">
                                 <div className="social-icons">
                                     <div className="icon">
                                         <a href="https://www.linkedin.com/in/edyta-szarowska/" target="_blank" rel="noopener noreferrer">
@@ -170,7 +180,7 @@ class Projects extends React.Component {
                     <Card>
                         <Card.Img variant="top" src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
                         <Card.Body>
-                            <div class="icon-description">
+                            <div className="icon-description">
                                 <div className="social-icons">
                                     <div className="icon">
                                         <a href="https://www.linkedin.com/in/edyta-szarowska/" target="_blank" rel="noopener noreferrer">
@@ -209,7 +219,7 @@ class Projects extends React.Component {
                     </Card>
                     <Card>
                         <Card.Body>
-                        <div class="icon-description">
+                            <div className="icon-description">
                                 <div className="social-icons">
                                     <div className="icon">
                                         <a href="https://www.linkedin.com/in/edyta-szarowska/" target="_blank" rel="noopener noreferrer">
@@ -251,7 +261,7 @@ class Projects extends React.Component {
                     <Card>
 
                         <Card.Body>
-                        <div class="icon-description">
+                            <div className="icon-description">
                                 <div className="social-icons">
                                     <div className="icon">
                                         <a href="https://www.linkedin.com/in/edyta-szarowska/" target="_blank" rel="noopener noreferrer">
@@ -293,7 +303,7 @@ class Projects extends React.Component {
                     <Card>
 
                         <Card.Body>
-                        <div class="icon-description">
+                            <div className="icon-description">
                                 <div className="social-icons">
                                     <div className="icon">
                                         <a href="https://www.linkedin.com/in/edyta-szarowska/" target="_blank" rel="noopener noreferrer">
@@ -335,7 +345,7 @@ class Projects extends React.Component {
                     <Card>
                         <Card.Img variant="top" src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
                         <Card.Body>
-                        <div class="icon-description">
+                            <div className="icon-description">
                                 <div className="social-icons">
                                     <div className="icon">
                                         <a href="https://www.linkedin.com/in/edyta-szarowska/" target="_blank" rel="noopener noreferrer">
@@ -376,7 +386,7 @@ class Projects extends React.Component {
                     <Card>
                         <Card.Img variant="top" src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
                         <Card.Body>
-                        <div class="icon-description">
+                            <div className="icon-description">
                                 <div className="social-icons">
                                     <div className="icon">
                                         <a href="https://www.linkedin.com/in/edyta-szarowska/" target="_blank" rel="noopener noreferrer">
@@ -417,7 +427,7 @@ class Projects extends React.Component {
                     <Card>
                         <Card.Img variant="top" src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
                         <Card.Body>
-                        <div class="icon-description">
+                            <div className="icon-description">
                                 <div className="social-icons">
                                     <div className="icon">
                                         <a href="https://www.linkedin.com/in/edyta-szarowska/" target="_blank" rel="noopener noreferrer">
@@ -456,7 +466,7 @@ class Projects extends React.Component {
                         </Card.Body>
                     </Card>
                 </CardColumns>
-            </div>
+            </div >
         );
     }
 }
