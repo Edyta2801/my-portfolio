@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../components/styles/App-style.css';
 import '../components/styles/Responsive.css';
+import '../../src/components/styles/Footer.scss';
 
 import github from '../images/GitHub-logo.png';
 import linkedin from '../images/linkedin-logo.png';
