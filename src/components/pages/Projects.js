@@ -30,7 +30,7 @@ class Projects extends React.Component {
     }
 
     componentDidMount() {
-        axios.get('/api/portfolios')
+        axios.get('/api/database')
             .then(response => {
                 this.setState({
                     portfolios: response.data
