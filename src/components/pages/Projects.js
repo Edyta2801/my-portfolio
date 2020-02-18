@@ -4,62 +4,11 @@ import '../styles/Projects.css';
 import linkedin from '../../images/linkedin-logo.png';
 import github from '../../images/GitHub-logo.png';
 import '../../components/styles/Responsive.css';
-import Lightbox from 'react-image-lightbox';
+import FsLightbox from "fslightbox-react";
 import 'react-image-lightbox/style.css';
 import { ZoomIn, Link } from 'react-feather';
-import blog_1 from '../../images/Projects/blog_1.png';
-import Images1 from '../../components/Images1';
+import axios from 'axios';
 
-
-const images = [
-    '//placekitten.com/1500/500',
-    '//placekitten.com/4000/3000',
-    '//placekitten.com/800/1200',
-    '//placekitten.com/1500/1500',
-];
-
-const images2 = [
-    '//placekitten.com/1500/500',
-    '//placekitten.com/4000/3000',
-    '//placekitten.com/800/1200',
-    '//placekitten.com/1500/1500',
-]
-const images3 = [
-    '//placekitten.com/1500/500',
-    '//placekitten.com/4000/3000',
-    '//placekitten.com/800/1200',
-    '//placekitten.com/1500/1500',
-]
-const images4 = [
-    '//placekitten.com/1500/500',
-    '//placekitten.com/4000/3000',
-    '//placekitten.com/800/1200',
-    '//placekitten.com/1500/1500',
-]
-const images5 = [
-    '//placekitten.com/1500/500',
-    '//placekitten.com/4000/3000',
-    '//placekitten.com/800/1200',
-    '//placekitten.com/1500/1500',
-];
-const images6 = [
-    '//placekitten.com/1500/500',
-    '//placekitten.com/4000/3000',
-    '//placekitten.com/800/1200',
-    '//placekitten.com/1500/1500',
-];
-const images7 = [
-    '//placekitten.com/1500/500',
-    '//placekitten.com/4000/3000',
-    '//placekitten.com/800/1200',
-    '//placekitten.com/1500/1500',
-];
-const images8 = [
-    '//placekitten.com/1500/500',
-    '//placekitten.com/4000/3000',
-    '//placekitten.com/800/1200',
-    '//placekitten.com/1500/1500',
-];
 
 
 
@@ -71,63 +20,61 @@ class Projects extends React.Component {
         this.state = {
             linkedin: linkedin,
             github: github,
-            photoIndex: 0,
-            isOpen: false,
-            images1: [],
-            modalIsOpen: false,
+            toggler: false,
+            portfolios: [],
 
         };
     }
-    toggleModal = () => {
-        this.setState(state => ({ modalIsOpen: !state.modalIsOpen }));
+    setToggler(event) {
+        this.setState({ toggler: event });
     }
 
+    componentDidMount() {
+        axios.get('/api/portfolios')
+            .then(response => {
+                this.setState({
+                    portfolios: response.data
+                })
+            })
+    };
+
+
     render() {
-        const { photoIndex, isOpen } = this.state;
+        const { imageUrl, largeImageUrl } = this.props.content;
 
         return (
             <div className="body">
-                <Images1/>
                 <CardColumns>
                     <Card>
-                        <div className='wholeCard'>
-                            <Card.Img variant="top" src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
-                            <Card.Body>
-                                <Card.Title>Card title that wraps to a new line</Card.Title>
-                            </Card.Body>
-                            <div className="icon-description">
-                                <div className="social-icons">
-                                    <div className="icon">
-                                        <a href="https://www.linkedin.com/in/edyta-szarowska/" target="_blank" rel="noopener noreferrer">
-                                            <Link />
-                                        </a>
-                                    </div>
-                                    <div className="icon">
-                                        <button type="button" onClick={() => this.setState({ isOpen: true })}>
-                                            <ZoomIn /></button>
+                        {this.state.portfolios.map(portfolio => (
+                            <div className='wholeCard'>
+                                <Card.Img variant="top" src={imageUrl} alt="Project" content={portfolio} />
+                                <Card.Body>
+                                    <Card.Title>Card title that wraps to a new line</Card.Title>
+                                </Card.Body>
+                                <div className="icon-description">
+                                    <div className="social-icons">
+                                        <div className="icon">
+                                            <a href="https://www.linkedin.com/in/edyta-szarowska/" target="_blank" rel="noopener noreferrer">
+                                                <Link />
+                                            </a>
+                                        </div>
+                                        <div className="icon">
 
-                                        {isOpen && (
-                                            <Lightbox
-                                                mainSrc={images[photoIndex]}
-                                                nextSrc={images[(photoIndex + 1) % images.length]}
-                                                prevSrc={images[(photoIndex + images.length - 1) % images.length]}
-                                                onCloseRequest={() => this.setState({ isOpen: false })}
-                                                onMovePrevRequest={() =>
-                                                    this.setState({
-                                                        photoIndex: (photoIndex + images.length - 1) % images.length,
-                                                    })
-                                                }
-                                                onMoveNextRequest={() =>
-                                                    this.setState({
-                                                        photoIndex: (photoIndex + 1) % images.length,
-                                                    })
-                                                }
+                                            <button type="button" onClick={() => this.setToggler(!this.state.toggler)}>
+                                                <ZoomIn />
+
+                                            </button>
+
+                                            <FsLightbox
+                                                toggler={this.state.toggler}
+                                                sources={largeImageUrl}
                                             />
-                                        )}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        ))}
                     </Card>
                     <Card>
                         <Card.Img variant="top" src={blog_1} alt="blog" />
@@ -142,7 +89,6 @@ class Projects extends React.Component {
                                     <div className="icon">
                                         <button type="button" onClick={() => this.setState({ isOpen: true })}>
                                             <ZoomIn /></button>
-                                        <Images1 />
 
                                     </div>
                                 </div>
@@ -446,5 +392,6 @@ class Projects extends React.Component {
         );
     }
 }
+
 
 export default Projects;
