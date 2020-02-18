@@ -59,7 +59,7 @@ class Contact extends Component {
                         </div>
                     }
                 </section>
-               
+
             </div>
         );
     }

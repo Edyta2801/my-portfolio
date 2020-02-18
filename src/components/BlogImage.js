@@ -2,13 +2,13 @@ import React from 'react';
 import Carousel, { Modal, ModalGateway } from 'react-images';
 
 const images1 = [{
-    src: './images/blog_1.png'
+    src: 'path/to/blog_1.png'
 },
 {
     src: './images/blog_2.png'
 }];
 
-class Images1 extends React.Component {
+class BlogImage extends React.Component {
     state = { modalIsOpen: false };
     toggleModal = () => {
         this.setState(state => ({ modalIsOpen: !state.modalIsOpen }));
@@ -27,4 +27,4 @@ class Images1 extends React.Component {
         );
     }
 }
-export default Images1;
+export default BlogImage;
