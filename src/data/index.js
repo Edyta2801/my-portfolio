@@ -1,4 +1,4 @@
 import Mock from "./mock";
-import "./db/database";
+import "./database";
 
 Mock.onAny().passThrough();
