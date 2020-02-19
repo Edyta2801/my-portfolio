@@ -328,6 +328,7 @@ class Projects extends React.Component {
                         <Card.Img variant="top" src={p6} />
                     </Card>
                     <Card>
+                        <Card.Img variant="top" src={p7} />
                         <Card.Body>
                             <div className="icon-description">
                                 <div className="social-icons">
@@ -366,7 +367,6 @@ class Projects extends React.Component {
                                 React Redux Sass AJAX API
                             </Card.Text>
                         </Card.Body>
-                        <Card.Img variant="top" src={p7} />
                     </Card>
                     <Card>
                         <Card.Img variant="top" src={p8} />
