@@ -10,6 +10,10 @@ import { ZoomIn, Link } from 'react-feather';
 import p2 from '../../images/Projects/blog_1.png';
 import p1 from '../../images/projectfour.png';
 import p3 from '../../images/Projects/2.png';
+import p4 from '../../images/Projects/memory_1.png';
+import p5 from '../../images/Projects/webpage_1.png';
+import p6 from '../../images/Projects/pizzeria_1.png';
+
 
 const images = [
     '//thumbs.dreamstime.com/z/conceptual-hand-writing-showing-my-portfolio-motivational-call-business-photo-showcasing-samples-work-art-drawings-photography-120435291.jpg',
@@ -31,16 +35,22 @@ const images2 = [
 
 ]
 const images3 = [
-    '//res.cloudinary.com/edyta/image/upload/v1582111989/blog_1_j0hxst.png',
-    '//res.cloudinary.com/edyta/image/upload/v1582111989/blog_2_ahoxou.png',]
+    '//res.cloudinary.com/edyta/image/upload/v1582118344/memory_1_ygkgxf.png',
+    '//res.cloudinary.com/edyta/image/upload/v1582118344/memory_2_l8cbxq.png',]
 
 const images4 = [
-    '//res.cloudinary.com/edyta/image/upload/v1582111989/blog_1_j0hxst.png',
-    '//res.cloudinary.com/edyta/image/upload/v1582111989/blog_2_ahoxou.png',
+    '//res.cloudinary.com/edyta/image/upload/v1582118364/webpage_1_nder4j.png',
+    '//res.cloudinary.com/edyta/image/upload/v1582118364/webpage_3_zgfzwo.png',
+    '//res.cloudinary.com/edyta/image/upload/v1582118364/webpage_2_uph7tv.png',
+    '//res.cloudinary.com/edyta/image/upload/v1582118363/webpage_4_bubnzq.png',
 ]
 const images5 = [
-    '//res.cloudinary.com/edyta/image/upload/v1582111989/blog_1_j0hxst.png',
-    '//res.cloudinary.com/edyta/image/upload/v1582111989/blog_2_ahoxou.png',
+    '//res.cloudinary.com/edyta/image/upload/v1582118413/pizzeria_1_xsgfqc.png',
+    '//res.cloudinary.com/edyta/image/upload/v1582118412/pizzeria_3_xgmrn7.png',
+    '//res.cloudinary.com/edyta/image/upload/v1582118413/pizzeria_2_obnn9a.png',
+    '//res.cloudinary.com/edyta/image/upload/v1582118412/pizzeria_5_u0nlnl.png',
+    '//res.cloudinary.com/edyta/image/upload/v1582118412/pizzeria_4_pcsbr7.png',
+    '//res.cloudinary.com/edyta/image/upload/v1582118412/pizzeria_6_vozrgr.png',
 ];
 const images6 = [
     '//res.cloudinary.com/edyta/image/upload/v1582111989/blog_1_j0hxst.png',
@@ -80,40 +90,40 @@ class Projects extends React.Component {
                             <Card.Img variant="top" src={p1} />
                             <Card.Body>
                                 <Card.Title>Portfolio webpage</Card.Title>
-                                <Card.Subtitle>React npm Sass Bootstrap </Card.Subtitle>
-                            </Card.Body>
-                            <div className="icon-description">
-                                <div className="social-icons">
-                                    <div className="icon">
-                                        <a href="https://portfolio-edyta-szarowska.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                                            <Link />
-                                        </a>
-                                    </div>
-                                    <div className="icon">
-                                        <button type="button" onClick={() => this.setState({ isOpen: true })}>
-                                            <ZoomIn /></button>
+                                <Card.Text>React npm Sass Bootstrap </Card.Text>
+                                <div className="icon-description">
+                                    <div className="social-icons">
+                                        <div className="icon">
+                                            <a href="https://portfolio-edyta-szarowska.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                                                <Link />
+                                            </a>
+                                        </div>
+                                        <div className="icon">
+                                            <button type="button" onClick={() => this.setState({ isOpen: true })}>
+                                                <ZoomIn /></button>
 
-                                        {isOpen && (
-                                            <Lightbox
-                                                mainSrc={images[photoIndex]}
-                                                nextSrc={images[(photoIndex + 1) % images.length]}
-                                                prevSrc={images[(photoIndex + images.length - 1) % images.length]}
-                                                onCloseRequest={() => this.setState({ isOpen: false })}
-                                                onMovePrevRequest={() =>
-                                                    this.setState({
-                                                        photoIndex: (photoIndex + images.length - 1) % images.length,
-                                                    })
-                                                }
-                                                onMoveNextRequest={() =>
-                                                    this.setState({
-                                                        photoIndex: (photoIndex + 1) % images.length,
-                                                    })
-                                                }
-                                            />
-                                        )}
+                                            {isOpen && (
+                                                <Lightbox
+                                                    mainSrc={images[photoIndex]}
+                                                    nextSrc={images[(photoIndex + 1) % images.length]}
+                                                    prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+                                                    onCloseRequest={() => this.setState({ isOpen: false })}
+                                                    onMovePrevRequest={() =>
+                                                        this.setState({
+                                                            photoIndex: (photoIndex + images.length - 1) % images.length,
+                                                        })
+                                                    }
+                                                    onMoveNextRequest={() =>
+                                                        this.setState({
+                                                            photoIndex: (photoIndex + 1) % images.length,
+                                                        })
+                                                    }
+                                                />
+                                            )}
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </Card.Body>
                         </div>
                     </Card>
                     <Card>
@@ -121,40 +131,40 @@ class Projects extends React.Component {
                             <Card.Img variant="top" src={p2} />
                             <Card.Body>
                                 <Card.Title>JavaScript-blog</Card.Title>
-                                <Card.Subtitle>JavaScript Sass npm</Card.Subtitle>
-                            </Card.Body>
-                            <div className="icon-description">
-                                <div className="social-icons">
-                                    <div className="icon">
-                                        <a href="https://edyta2801.github.io/javascript-blog/" target="_blank" rel="noopener noreferrer">
-                                            <Link />
-                                        </a>
-                                    </div>
-                                    <div className="icon">
-                                        <button type="button" onClick={() => this.setState({ isOpen: true })}>
-                                            <ZoomIn /></button>
+                                <Card.Text>JavaScript Sass npm</Card.Text>
+                                <div className="icon-description">
+                                    <div className="social-icons">
+                                        <div className="icon">
+                                            <a href="https://edyta2801.github.io/javascript-blog/" target="_blank" rel="noopener noreferrer">
+                                                <Link />
+                                            </a>
+                                        </div>
+                                        <div className="icon">
+                                            <button type="button" onClick={() => this.setState({ isOpen: true })}>
+                                                <ZoomIn /></button>
 
-                                        {isOpen && (
-                                            <Lightbox
-                                                mainSrc={images1[photoIndex]}
-                                                nextSrc={images1[(photoIndex + 1) % images1.length]}
-                                                prevSrc={images1[(photoIndex + images1.length - 1) % images1.length]}
-                                                onCloseRequest={() => this.setState({ isOpen: false })}
-                                                onMovePrevRequest={() =>
-                                                    this.setState({
-                                                        photoIndex: (photoIndex + images1.length - 1) % images1.length,
-                                                    })
-                                                }
-                                                onMoveNextRequest={() =>
-                                                    this.setState({
-                                                        photoIndex: (photoIndex + 1) % images1.length,
-                                                    })
-                                                }
-                                            />
-                                        )}
+                                            {isOpen && (
+                                                <Lightbox
+                                                    mainSrc={images1[photoIndex]}
+                                                    nextSrc={images1[(photoIndex + 1) % images1.length]}
+                                                    prevSrc={images1[(photoIndex + images1.length - 1) % images1.length]}
+                                                    onCloseRequest={() => this.setState({ isOpen: false })}
+                                                    onMovePrevRequest={() =>
+                                                        this.setState({
+                                                            photoIndex: (photoIndex + images1.length - 1) % images1.length,
+                                                        })
+                                                    }
+                                                    onMoveNextRequest={() =>
+                                                        this.setState({
+                                                            photoIndex: (photoIndex + 1) % images1.length,
+                                                        })
+                                                    }
+                                                />
+                                            )}
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </Card.Body>
                         </div>
                     </Card>
                     <Card>
@@ -162,166 +172,167 @@ class Projects extends React.Component {
                             <Card.Img variant="top" src={p3} />
                             <Card.Body>
                                 <Card.Title>testYourself  App</Card.Title>
-                                <Card.Subtitle>React Redux Firebase Material-ui </Card.Subtitle>
-                            </Card.Body>
-                            <div className="icon-description">
-                                <div className="social-icons">
-                                    <div className="icon">
-                                        <a href="http://app.testyourself.jfddl6.is-academy.pl/" target="_blank" rel="noopener noreferrer">
-                                            <Link />
-                                        </a>
-                                    </div>
-                                    <div className="icon">
-                                        <button type="button" onClick={() => this.setState({ isOpen: true })}>
-                                            <ZoomIn /></button>
+                                <Card.Text>React Redux Firebase</Card.Text>
+                                <div className="icon-description">
+                                    <div className="social-icons">
+                                        <div className="icon">
+                                            <a href="http://app.testyourself.jfddl6.is-academy.pl/" target="_blank" rel="noopener noreferrer">
+                                                <Link />
+                                            </a>
+                                        </div>
+                                        <div className="icon">
+                                            <button type="button" onClick={() => this.setState({ isOpen: true })}>
+                                                <ZoomIn /></button>
 
-                                        {isOpen && (
-                                            <Lightbox
-                                                mainSrc={images2[photoIndex]}
-                                                nextSrc={images2[(photoIndex + 1) % images2.length]}
-                                                prevSrc={images2[(photoIndex + images2.length - 1) % images2.length]}
-                                                onCloseRequest={() => this.setState({ isOpen: false })}
-                                                onMovePrevRequest={() =>
-                                                    this.setState({
-                                                        photoIndex: (photoIndex + images2.length - 1) % images2.length,
-                                                    })
-                                                }
-                                                onMoveNextRequest={() =>
-                                                    this.setState({
-                                                        photoIndex: (photoIndex + 1) % images2.length,
-                                                    })
-                                                }
-                                            />
-                                        )}
+                                            {isOpen && (
+                                                <Lightbox
+                                                    mainSrc={images2[photoIndex]}
+                                                    nextSrc={images2[(photoIndex + 1) % images2.length]}
+                                                    prevSrc={images2[(photoIndex + images2.length - 1) % images2.length]}
+                                                    onCloseRequest={() => this.setState({ isOpen: false })}
+                                                    onMovePrevRequest={() =>
+                                                        this.setState({
+                                                            photoIndex: (photoIndex + images2.length - 1) % images2.length,
+                                                        })
+                                                    }
+                                                    onMoveNextRequest={() =>
+                                                        this.setState({
+                                                            photoIndex: (photoIndex + 1) % images2.length,
+                                                        })
+                                                    }
+                                                />
+                                            )}
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </Card.Body>
                         </div>
                     </Card>
                     <Card>
-                        <Card.Body>
-                            <div className="icon-description">
-                                <div className="social-icons">
-                                    <div className="icon">
-                                        <a href="https://www.linkedin.com/in/edyta-szarowska/" target="_blank" rel="noopener noreferrer">
-                                            <Link />
-                                        </a>
-                                    </div>
-                                    <div className="icon">
-                                        <button type="button" onClick={() => this.setState({ isOpen: true })}>
-                                            <ZoomIn /></button>
-
-                                        {isOpen && (
-                                            <Lightbox
-                                                mainSrc={images3[photoIndex]}
-                                                nextSrc={images3[(photoIndex + 1) % images3.length]}
-                                                prevSrc={images3[(photoIndex + images3.length - 1) % images3.length]}
-                                                onCloseRequest={() => this.setState({ isOpen: false })}
-                                                onMovePrevRequest={() =>
-                                                    this.setState({
-                                                        photoIndex: (photoIndex + images3.length - 1) % images3.length,
-                                                    })
-                                                }
-                                                onMoveNextRequest={() =>
-                                                    this.setState({
-                                                        photoIndex: (photoIndex + 1) % images3.length,
-                                                    })
-                                                }
-                                            />
-                                        )}
+                        <div className='wholeCard'>
+                            <Card.Body>
+                                <div className="icon-description">
+                                    <div className="social-icons">
+                                        <div className="icon">
+                                            <a href="http://www.testyourself.jfddl6.is-academy.pl/thank-you.html" target="_blank" rel="noopener noreferrer">
+                                                <Link />
+                                            </a>
+                                        </div>
+                                        <div className="icon">
+                                            <button type="button" onClick={() => this.setState({ isOpen: true })}>
+                                                <ZoomIn /></button>
+                                            {isOpen && (
+                                                <Lightbox
+                                                    mainSrc={images3[photoIndex]}
+                                                    nextSrc={images3[(photoIndex + 1) % images3.length]}
+                                                    prevSrc={images3[(photoIndex + images3.length - 1) % images3.length]}
+                                                    onCloseRequest={() => this.setState({ isOpen: false })}
+                                                    onMovePrevRequest={() =>
+                                                        this.setState({
+                                                            photoIndex: (photoIndex + images3.length - 1) % images3.length,
+                                                        })
+                                                    }
+                                                    onMoveNextRequest={() =>
+                                                        this.setState({
+                                                            photoIndex: (photoIndex + 1) % images3.length,
+                                                        })
+                                                    }
+                                                />
+                                            )}
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <Card.Title>Card title that wraps to a new line</Card.Title>
-                            <Card.Text>
-
-                            </Card.Text>
-                        </Card.Body>
-                        <Card.Img variant="top" src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+                                <Card.Title>Memory game</Card.Title>
+                                <Card.Text>JavaScript OOP </Card.Text>
+                            </Card.Body>
+                            <Card.Img variant="top" src={p4} />
+                        </div>
                     </Card>
                     <Card>
+                        <div className='wholeCard'>
+                            <Card.Body>
+                                <div className="icon-description">
+                                    <div className="social-icons">
+                                        <div className="icon">
+                                            <a href="http://www.testyourself.jfddl6.is-academy.pl/" target="_blank" rel="noopener noreferrer">
+                                                <Link />
+                                            </a>
+                                        </div>
+                                        <div className="icon">
+                                            <button type="button" onClick={() => this.setState({ isOpen: true })}>
+                                                <ZoomIn /></button>
 
-                        <Card.Body>
-                            <div className="icon-description">
-                                <div className="social-icons">
-                                    <div className="icon">
-                                        <a href="https://www.linkedin.com/in/edyta-szarowska/" target="_blank" rel="noopener noreferrer">
-                                            <Link />
-                                        </a>
-                                    </div>
-                                    <div className="icon">
-                                        <button type="button" onClick={() => this.setState({ isOpen: true })}>
-                                            <ZoomIn /></button>
-
-                                        {isOpen && (
-                                            <Lightbox
-                                                mainSrc={images4[photoIndex]}
-                                                nextSrc={images4[(photoIndex + 1) % images4.length]}
-                                                prevSrc={images4[(photoIndex + images4.length - 1) % images4.length]}
-                                                onCloseRequest={() => this.setState({ isOpen: false })}
-                                                onMovePrevRequest={() =>
-                                                    this.setState({
-                                                        photoIndex: (photoIndex + images4.length - 1) % images4.length,
-                                                    })
-                                                }
-                                                onMoveNextRequest={() =>
-                                                    this.setState({
-                                                        photoIndex: (photoIndex + 1) % images4.length,
-                                                    })
-                                                }
-                                            />
-                                        )}
+                                            {isOpen && (
+                                                <Lightbox
+                                                    mainSrc={images4[photoIndex]}
+                                                    nextSrc={images4[(photoIndex + 1) % images4.length]}
+                                                    prevSrc={images4[(photoIndex + images4.length - 1) % images4.length]}
+                                                    onCloseRequest={() => this.setState({ isOpen: false })}
+                                                    onMovePrevRequest={() =>
+                                                        this.setState({
+                                                            photoIndex: (photoIndex + images4.length - 1) % images4.length,
+                                                        })
+                                                    }
+                                                    onMoveNextRequest={() =>
+                                                        this.setState({
+                                                            photoIndex: (photoIndex + 1) % images4.length,
+                                                        })
+                                                    }
+                                                />
+                                            )}
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <Card.Title>Card title that wraps to a new line</Card.Title>
-                            <Card.Text>
-
+                                <Card.Title>Team webpage </Card.Title>
+                                <Card.Text>
+                                    JavaScript Layout
                             </Card.Text>
-                        </Card.Body>
-                        <Card.Img variant="top" src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+                            </Card.Body>
+                            <Card.Img variant="top" src={p5} />
+                        </div>
                     </Card>
                     <Card>
+                        <div className='wholeCard'>
+                            <Card.Body>
+                                <div className="icon-description">
+                                    <div className="social-icons">
+                                        <div className="icon">
+                                            <a href="https://project-restaurant-pizzeria.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                                                <Link />
+                                            </a>
+                                        </div>
+                                        <div className="icon">
+                                            <button type="button" onClick={() => this.setState({ isOpen: true })}>
+                                                <ZoomIn /></button>
 
-                        <Card.Body>
-                            <div className="icon-description">
-                                <div className="social-icons">
-                                    <div className="icon">
-                                        <a href="https://www.linkedin.com/in/edyta-szarowska/" target="_blank" rel="noopener noreferrer">
-                                            <Link />
-                                        </a>
-                                    </div>
-                                    <div className="icon">
-                                        <button type="button" onClick={() => this.setState({ isOpen: true })}>
-                                            <ZoomIn /></button>
-
-                                        {isOpen && (
-                                            <Lightbox
-                                                mainSrc={images5[photoIndex]}
-                                                nextSrc={images5[(photoIndex + 1) % images5.length]}
-                                                prevSrc={images5[(photoIndex + images5.length - 1) % images5.length]}
-                                                onCloseRequest={() => this.setState({ isOpen: false })}
-                                                onMovePrevRequest={() =>
-                                                    this.setState({
-                                                        photoIndex: (photoIndex + images5.length - 1) % images5.length,
-                                                    })
-                                                }
-                                                onMoveNextRequest={() =>
-                                                    this.setState({
-                                                        photoIndex: (photoIndex + 1) % images5.length,
-                                                    })
-                                                }
-                                            />
-                                        )}
+                                            {isOpen && (
+                                                <Lightbox
+                                                    mainSrc={images5[photoIndex]}
+                                                    nextSrc={images5[(photoIndex + 1) % images5.length]}
+                                                    prevSrc={images4[(photoIndex + images5.length - 1) % images5.length]}
+                                                    onCloseRequest={() => this.setState({ isOpen: false })}
+                                                    onMovePrevRequest={() =>
+                                                        this.setState({
+                                                            photoIndex: (photoIndex + images5.length - 1) % images5.length,
+                                                        })
+                                                    }
+                                                    onMoveNextRequest={() =>
+                                                        this.setState({
+                                                            photoIndex: (photoIndex + 1) % images5.length,
+                                                        })
+                                                    }
+                                                />
+                                            )}
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <Card.Title>Card title that wraps to a new line</Card.Title>
-                            <Card.Text>
-
+                                <Card.Title>Pizzeria App </Card.Title>
+                                <Card.Text>
+                                    JavaScript Sass OOP API
                             </Card.Text>
-                        </Card.Body>
-                        <Card.Img variant="top" src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+                            </Card.Body>
+                            <Card.Img variant="top" src={p6} />
+                        </div>
                     </Card>
                     <Card>
                         <Card.Img variant="top" src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
@@ -447,7 +458,7 @@ class Projects extends React.Component {
                         </Card.Body>
                     </Card>
                 </CardColumns>
-            </div>
+            </div >
         );
     }
 }

@@ -141,7 +141,6 @@
       height: 32px;
       margin-right: 8px;
   }
-  
 
   /* .brick-description .social-links .social-last {
     background-color: #000000;
@@ -163,12 +162,11 @@
       /* padding: 8px 8px 10px 8px; */
   }
 
-  .brick-description .social-links .social  {
+  .brick-description .social-links .social {
       width: 16px;
       height: 17px;
       /* padding: 10px 8px 10px 8px; */
   }
-
 
   /* .brick-description .social-links .social-last .email {
     width: 16px;
@@ -184,54 +182,54 @@
     margin: 20px auto 0px auto;
     width: 100%;
 } */
-.icon-description {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    height: 100%;
-}
 
-.icon-description:hover {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #fff;
-    opacity: 1;
-    background: rgba(0, 0, 0, 0.6);
-    width: 100%;
-    transition: all .4s ease-out;
-    transform-origin: 0;
+  .icon-description {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      height: 100%;
+  }
 
-}
+  .icon-description:hover {
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: #fff;
+      opacity: 1;
+      background: rgba(0, 0, 0, 0.6);
+      width: 100%;
+      transition: all .4s ease-out;
+      transform-origin: 0;
+  }
 
-.icon {
-    float: right;
-    width: 33.333%;
-    /* height: 300px; */
-    position: relative;
-}
+  .icon {
+      float: right;
+      width: 33.333%;
+      /* height: 300px; */
+      position: relative;
+  }
 
-.icon-description { 
-    /* margin-top: 60px; 
+  .icon-description {
+      /* margin-top: 60px; 
     margin-bottom: 60px; */
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-.icon-description .social-icons {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+  }
 
+  .icon-description .social-icons {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+  }
 
- .social-icons a, button {
+  .social-icons a, button {
       display: inline-block;
       height: 45px;
       width: 45px;
@@ -256,8 +254,10 @@
       background: #037fff;
       border-color: #037fff;
   }
-  .social-icons a:hover {
-    background: #037fff;
-    border-color: #037fff;
-}
 
+  .social-icons a:hover {
+      background: #037fff;
+      border-color: #037fff;
+  }
+
+  
