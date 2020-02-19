@@ -7,10 +7,12 @@ import '../../components/styles/Responsive.css';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 import { ZoomIn, Link } from 'react-feather';
-import blog1 from '../../images/Projects/blog_1.png';
+import p2 from '../../images/Projects/blog_1.png';
+import p1 from '../../images/projectfour.png';
+import p3 from '../../images/Projects/2.png';
 
 const images = [
-    '//res.cloudinary.com/edyta/image/upload/v1582111989/blog_2_ahoxou.png',
+    '//thumbs.dreamstime.com/z/conceptual-hand-writing-showing-my-portfolio-motivational-call-business-photo-showcasing-samples-work-art-drawings-photography-120435291.jpg',
     '//res.cloudinary.com/edyta/image/upload/v1582111989/blog_1_j0hxst.png',
 ];
 const images1 = [
@@ -18,8 +20,15 @@ const images1 = [
     '//res.cloudinary.com/edyta/image/upload/v1582111989/blog_2_ahoxou.png',
 ];
 const images2 = [
-    '//res.cloudinary.com/edyta/image/upload/v1582111989/blog_1_j0hxst.png',
-    '//res.cloudinary.com/edyta/image/upload/v1582111989/blog_2_ahoxou.png',
+    '//res.cloudinary.com/edyta/image/upload/v1582118320/1_ae0rm3.png',
+    '//res.cloudinary.com/edyta/image/upload/v1582118320/2_xyybsf.png',
+    '//res.cloudinary.com/edyta/image/upload/v1582118320/3_wcg4do.png',
+    '//res.cloudinary.com/edyta/image/upload/v1582118320/4_edfmvx.png',
+    '//res.cloudinary.com/edyta/image/upload/v1582118320/5_oinsqq.png',
+    '//res.cloudinary.com/edyta/image/upload/v1582118320/6_mzbfgc.png',
+    '//res.cloudinary.com/edyta/image/upload/v1582118320/7_ey4afk.png',
+    '//res.cloudinary.com/edyta/image/upload/v1582118320/8_qeypzw.png',
+
 ]
 const images3 = [
     '//res.cloudinary.com/edyta/image/upload/v1582111989/blog_1_j0hxst.png',
@@ -68,14 +77,15 @@ class Projects extends React.Component {
                 <CardColumns>
                     <Card>
                         <div className='wholeCard'>
-                            <Card.Img variant="top" src={blog1} />
+                            <Card.Img variant="top" src={p1} />
                             <Card.Body>
-                                <Card.Title>Card title that wraps to a new line</Card.Title>
+                                <Card.Title>Portfolio webpage</Card.Title>
+                                <Card.Subtitle>React npm Sass Bootstrap </Card.Subtitle>
                             </Card.Body>
                             <div className="icon-description">
                                 <div className="social-icons">
                                     <div className="icon">
-                                        <a href="https://www.linkedin.com/in/edyta-szarowska/" target="_blank" rel="noopener noreferrer">
+                                        <a href="https://portfolio-edyta-szarowska.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                                             <Link />
                                         </a>
                                     </div>
@@ -107,12 +117,16 @@ class Projects extends React.Component {
                         </div>
                     </Card>
                     <Card>
-                        <Card.Img variant="top" src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
-                        <Card.Body>
+                        <div className='wholeCard'>
+                            <Card.Img variant="top" src={p2} />
+                            <Card.Body>
+                                <Card.Title>JavaScript-blog</Card.Title>
+                                <Card.Subtitle>JavaScript Sass npm</Card.Subtitle>
+                            </Card.Body>
                             <div className="icon-description">
                                 <div className="social-icons">
                                     <div className="icon">
-                                        <a href="https://www.linkedin.com/in/edyta-szarowska/" target="_blank" rel="noopener noreferrer">
+                                        <a href="https://edyta2801.github.io/javascript-blog/" target="_blank" rel="noopener noreferrer">
                                             <Link />
                                         </a>
                                     </div>
@@ -141,19 +155,19 @@ class Projects extends React.Component {
                                     </div>
                                 </div>
                             </div>
-                            <Card.Title>Card title that wraps to a new line</Card.Title>
-                            <Card.Text>
-
-                            </Card.Text>
-                        </Card.Body>
+                        </div>
                     </Card>
                     <Card>
-                        <Card.Img variant="top" src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
-                        <Card.Body>
+                        <div className='wholeCard'>
+                            <Card.Img variant="top" src={p3} />
+                            <Card.Body>
+                                <Card.Title>testYourself  App</Card.Title>
+                                <Card.Subtitle>React Redux Firebase Material-ui </Card.Subtitle>
+                            </Card.Body>
                             <div className="icon-description">
                                 <div className="social-icons">
                                     <div className="icon">
-                                        <a href="https://www.linkedin.com/in/edyta-szarowska/" target="_blank" rel="noopener noreferrer">
+                                        <a href="http://app.testyourself.jfddl6.is-academy.pl/" target="_blank" rel="noopener noreferrer">
                                             <Link />
                                         </a>
                                     </div>
@@ -182,10 +196,7 @@ class Projects extends React.Component {
                                     </div>
                                 </div>
                             </div>
-                            <Card.Title>Card title that wraps to a new line</Card.Title>
-                            <Card.Text>
-                            </Card.Text>
-                        </Card.Body>
+                        </div>
                     </Card>
                     <Card>
                         <Card.Body>
