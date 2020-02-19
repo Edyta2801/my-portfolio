@@ -6,11 +6,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "axios": "^0.19.2",
-    "axios-mock-adapter": "^1.17.0",
     "bootstrap": "^4.4.1",
-    "fslightbox-react": "^1.4.9",
-    "jquery": "^3.4.0",
     "node-sass": "^4.13.0",
     "react": "^16.12.0",
     "react-bootstrap": "^1.0.0-beta.16",
@@ -18,7 +14,6 @@
     "react-feather": "^2.0.3",
     "react-flexbox-grid": "^2.1.2",
     "react-image-lightbox": "^5.1.1",
-    "react-images": "^1.1.0-beta.3",
     "react-router-dom": "^5.1.2",
     "react-router-transition": "^2.0.0",
     "react-scripts": "^2.1.8"
@@ -39,12 +34,9 @@
       "not op_mini all"
     ],
     "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+      "last 5 chrome version",
+      "last 5 firefox version",
+      "last 5 safari version"
     ]
-  },
-  "devDependencies": {
-    "@types/react-images": "^0.5.1"
   }
 }
