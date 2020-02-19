@@ -82,10 +82,12 @@ class Projects extends React.Component {
             github: github,
             photoIndex: 0,
             isOpen: false,
+            photoIndex1:0,
+            isOpen1:false,
         }
     }
     render() {
-        const { photoIndex, isOpen } = this.state;
+        const { photoIndex, photoIndex1, isOpen } = this.state;
 
         return (
             <div className="body">
@@ -142,23 +144,23 @@ class Projects extends React.Component {
                                         </a>
                                     </div>
                                     <div className="icon">
-                                        <button type="button" onClick={() => this.setState({ isOpen: true })}>
+                                        <button type="button" onClick={() => this.setState({ isOpen1: true })}>
                                             <ZoomIn /></button>
 
                                         {isOpen && (
                                             <Lightbox
-                                                mainSrc={images1[photoIndex]}
-                                                nextSrc={images1[(photoIndex + 1) % images1.length]}
-                                                prevSrc={images1[(photoIndex + images1.length - 1) % images1.length]}
-                                                onCloseRequest={() => this.setState({ isOpen: false })}
+                                                mainSrc={images1[photoIndex1]}
+                                                nextSrc={images1[(photoIndex1 + 1) % images1.length]}
+                                                prevSrc={images1[(photoIndex1 + images1.length - 1) % images1.length]}
+                                                onCloseRequest={() => this.setState({ isOpen1: false })}
                                                 onMovePrevRequest={() =>
                                                     this.setState({
-                                                        photoIndex: (photoIndex + images1.length - 1) % images1.length,
+                                                        photoIndex: (photoIndex1 + images1.length - 1) % images1.length,
                                                     })
                                                 }
                                                 onMoveNextRequest={() =>
                                                     this.setState({
-                                                        photoIndex: (photoIndex + 1) % images1.length,
+                                                        photoIndex: (photoIndex1 + 1) % images1.length,
                                                     })
                                                 }
                                             />
