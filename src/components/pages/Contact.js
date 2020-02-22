@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../styles/App-style.css';
 import '../styles/Responsive.css';
 import profile from "../../images/projectone.png";
-import resume from "../../Resume_Anne Lee.pdf";
+import resume from "../../Edyta_Szarowska_CV_.pdf";
 
 
 class Contact extends Component {
