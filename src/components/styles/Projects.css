@@ -264,7 +264,7 @@
       border-color: #037fff;
   }
 
-  .card {
+  .card-columns .card {
       border: 1px solid rgba(0, 0, 0, .300);
   }
   .card-title, .card-subtitle{

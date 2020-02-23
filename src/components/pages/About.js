@@ -1,68 +1,149 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../styles/App-style.css';
 import '../styles/Responsive.css';
-import profile from "../../images/projecttwo.png";
+import "../styles/Skills.scss";
+//bootstrap
+import { Row, Col } from "react-bootstrap";
+//fontawesome
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLayerGroup,
+  faDatabase,
+  faUsers
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faHtml5,
+  faCss3Alt,
+  faSass,
+  faBootstrap,
+  faJs,
+  faReact,
+  faNode,
+  faEnvira,
+  faGitAlt,
+  faNpm,
+  faYarn,
+  faJira,
+  faSlack,
+  faAdobe,
+  faPhp
+} from "@fortawesome/free-brands-svg-icons";
+//img
+import bulb from "../../images/bulb.svg";
+import sideCircles from "../../images/side-circles.svg";
 
+const About = () => {
+  return (
+    <section className="skills">
+      <img
+        src={sideCircles}
+        alt="side-circles"
+        className="skills_circles-left"
+      />
+      <img
+        src={sideCircles}
+        alt="side-circles"
+        className="skills_circles-right"
+      />
+      <img src={bulb} alt="bulb" className="skills_bulb" />
+      <span className="skills_title">Front-end</span>
+      <div className="skills_stack">
+        <Row>
+          <Col md={4}>
+            <FontAwesomeIcon icon={faHtml5} className="skills_icon" />
+            <span className="skills_lang">HTML</span>
+          </Col>
+          <Col md={4}>
+            <FontAwesomeIcon icon={faCss3Alt} className="skills_icon" />
+            <span className="skills_lang">CSS</span>
+          </Col>
+          <Col md={4}>
+            <FontAwesomeIcon icon={faSass} className="skills_icon" />
+            <span className="skills_lang">Sass</span>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={4}>
+            <FontAwesomeIcon icon={faBootstrap} className="skills_icon" />
+            <span className="skills_lang">Bootstrap</span>
+          </Col>
+          <Col md={4}>
+            <FontAwesomeIcon icon={faJs} className="skills_icon" />
+            <span className="skills_lang">JavaScript</span>
+          </Col>
+          <Col md={4}>
+            <FontAwesomeIcon icon={faReact} className="skills_icon" />
+            <span className="skills_lang">React + Redux</span>
+          </Col>
+        </Row>
+      </div>
+      <span className="skills_title">Back-end</span>
+      <div className="skills_stack">
+        <Row>
+          <Col md={4}>
+            <FontAwesomeIcon icon={faNode} className="skills_icon" />
+            <span className="skills_lang">Node.js - Express</span>
+          </Col>
+          <Col md={4}>
+            <FontAwesomeIcon icon={faEnvira} className="skills_icon" />
+            <span className="skills_lang">MongoDB</span>
+          </Col>
+          <Col md={4}>
+            <FontAwesomeIcon icon={faLayerGroup} className="skills_icon" />
+            <span className="skills_lang">Stack MERN</span>
+          </Col>
+        </Row>
+      </div>
+      <span className="skills_title">Narzędzia i inne</span>
+      <div className="skills_stack">
+        <Row>
+          <Col md={4}>
+            <FontAwesomeIcon icon={faGitAlt} className="skills_icon" />
+            <span className="skills_lang">Git</span>
+          </Col>
+          <Col md={4}>
+            <FontAwesomeIcon icon={faNpm} className="skills_icon" />
+            <span className="skills_lang">npm</span>
+          </Col>
+          <Col md={4}>
+            <FontAwesomeIcon icon={faYarn} className="skills_icon" />
+            <span className="skills_lang">Yarn</span>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={4}>
+            <FontAwesomeIcon icon={faJira} className="skills_icon" />
+            <span className="skills_lang">Jira</span>
+          </Col>
+          <Col md={4}>
+            <FontAwesomeIcon icon={faSlack} className="skills_icon" />
+            <span className="skills_lang">Slack</span>
+          </Col>
+          <Col md={4}>
+            <FontAwesomeIcon icon={faAdobe} className="skills_icon" />
+            <span className="skills_lang">Photoshop, Illustrator</span>
+          </Col>
+        </Row>
+      </div>
+      <span className="skills_title">Aktualnie uczę się</span>
+      <div className="skills_stack">
+        <Row>
+          <Col md={4}>
+            <FontAwesomeIcon icon={faPhp} className="skills_icon" />
+            <span className="skills_lang">PHP</span>
+          </Col>
+          <Col md={4}>
+            <FontAwesomeIcon icon={faDatabase} className="skills_icon" />
+            <span className="skills_lang">MySQL</span>
+          </Col>
+          <Col md={4}>
+            <FontAwesomeIcon icon={faUsers} className="skills_icon" />
+            <span className="skills_lang">Scrum</span>
+          </Col>
+        </Row>
+      </div>
+    </section>
+  );
+};
 
-
-class Contact extends Component {
-
-
-    componentDidMount() {
-        window.scrollTo(0, 0);
-    }
-
-
-    render() {
-        return (
-            <div className="body">
-                <section className="about">
-                    <img src={profile} alt="Profile" className="about-image" />
-                    {window.innerWidth <= 1009 ?
-                        <div className="about-content">
-                            <div>
-                                Hi, my name is Anne.<br /><br />
-                                I am a Product Designer at Framer passionate about bridging technology and design. In the past I have worked for Naver, Korea's top search engine, and the Princeton Review. Here are a few things that describe me.<br /><br /><br />
-                            </div>
-                            <div data-aos="fade-up">
-                                <span className="about-title">Experience Designing from Brief to Shipment</span><br /><br />
-                                I have successfully shipped 5 digital products from scratch up to date. Through this experience, I have gained expertise in early stage conceptualization, designing applications from end-to-end, and gradually scaling design. These projects cover a variety of platforms, including the web, mobile and desktop.<br /><br /><br />
-                            </div>
-                            <div data-aos="fade-up">
-                                <span className="about-title">Experience Designing for Creative Tools</span><br /><br />
-                                Most of my recent work has been focused around tools for creatives. I am currently working on Framer Web, a collaborative design prototyping tool. In the past I have worked on professional video production tools for streamers. Through this process, I have gained a good understanding of what it's like to work with intricate systems and technical constraints.<br /><br /><br />
-                            </div>
-                            <div data-aos="fade-up">
-                                <span className="about-title">Qualified in Programming</span><br /><br />
-                                I am also qualified in programming; having received my Front End Developer Nanodegree from Udacity in 2018. I am capable of creating prototypes with web based technologies such as HTML, CSS, and Javascript; in fact, I designed and  this portfolio myself! My knowledge of technical limitations and possibilities also lead to strong designer-developer relationships.<br /><br /><br />
-                                Feel free to contact me for any inquiries about my portfolio and work opportunities!
-                </div>
-                        </div> :
-                        <div className="about-content">
-                            <div>
-                                Hi, my name is Anne.<br /><br />
-                                I am a Product Designer at Framer passionate about bridging technology and design. In the past I have worked for Naver, Korea's top search engine, and the Princeton Review. Here are a few things that describe me.<br /><br /><br />
-                            </div>
-                            <div data-aos="">
-                                <span className="about-title">Experience Designing from Brief to Shipment</span><br /><br />
-                                I have successfully shipped 5 digital products from scratch up to date. Through this experience, I have gained expertise in early stage conceptualization, designing applications from end-to-end, and gradually scaling design. These projects cover a variety of platforms, including the web, mobile and desktop.<br /><br /><br />
-                            </div>
-                            <div data-aos="">
-                                <span className="about-title">Experience Designing for Creative Tools</span><br /><br />
-                                Most of my recent work has been focused around tools for creatives. I am currently working on Framer Web, a collaborative design prototyping tool. In the past I have worked on professional video production tools for streamers. Through this process, I have gained a good understanding of what it's like to work with intricate systems and technical constraints.<br /><br /><br />
-                            </div>
-                            <div data-aos="">
-                                <span className="about-title">Qualified in Programming</span><br /><br />
-                                I am also qualified in programming; having received my Front End Developer Nanodegree from Udacity in 2018. I am capable of creating prototypes with web based technologies such as HTML, CSS, and Javascript; in fact, I designed and  this portfolio myself! My knowledge of technical limitations and possibilities also lead to strong designer-developer relationships.<br /><br /><br />
-                                Feel free to contact me for any inquiries about my portfolio and work opportunities!
-                </div>
-                        </div>
-                    }
-                </section>
-
-            </div>
-        );
-    }
-}
-
-export default Contact;
+export default About;

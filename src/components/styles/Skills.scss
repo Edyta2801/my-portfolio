@@ -1,0 +1,45 @@
+
+
+.skills {
+    @include section;
+    &_circles-left {
+      @include circles-left;
+    }
+    &_circles-right {
+      @include circles-right;
+    }
+    &_bulb {
+      @include circles-icon;
+    }
+    &_title {
+      @include title;
+      margin-top: 20px;
+    }
+    &_title:nth-child(4) {
+      margin-top: 0;
+      @include tablet-large {
+        margin-top: 30px;
+      }
+    }
+    &_stack {
+      padding: 24px 0;
+      @include border-shadow;
+    }
+    &_stack:last-child {
+      margin-bottom: 90px;
+    }
+    .row {
+      text-align: center;
+    }
+    [class*="col-"] {
+      margin: 10px auto;
+      color: $color-grey;
+    }
+    &_icon {
+      font-size: $base-size * 4.4;
+    }
+    &_lang {
+      display: block;
+      font-size: $base-size * 1.2;
+    }
+  }
