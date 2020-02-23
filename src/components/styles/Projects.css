@@ -191,6 +191,10 @@
       transform: translate(-50%, -50%);
       opacity: 0;
       height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      width: 100%;
+      transition: all .4s ease-out;
+      transform-origin: 0;
   }
 
   .icon-description:hover {
@@ -207,7 +211,6 @@
       transform-origin: 0;
   }
 
-
   .icon {
       float: right;
       width: 33.333%;
@@ -222,7 +225,6 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      
   }
 
   .icon-description .social-icons {
@@ -262,4 +264,9 @@
       border-color: #037fff;
   }
 
-  
+  .card {
+      border: 1px solid rgba(0, 0, 0, .300);
+  }
+  .card-title, .card-subtitle{
+      text-align: center;
+  }
