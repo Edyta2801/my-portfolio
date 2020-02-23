@@ -8,12 +8,12 @@ import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 import { ZoomIn, Link } from 'react-feather';
 import p2 from '../../images/Projects/blog_1.png';
-import p1 from '../../images/projectfour.png';
-import p3 from '../../images/Projects/2.png';
-import p4 from '../../images/Projects/memory_1.png';
-import p5 from '../../images/Projects/webpage_1.png';
-import p6 from '../../images/Projects/pizzeria.png';
-import p7 from '../../images/Projects/screenshot_1.png';
+import p1 from '../../images/Projects/portfolio.jpg';
+import p3 from '../../images/Projects/test.png';
+import p4 from '../../images/Projects/memory_new1.png';
+import p5 from '../../images/Projects/webpage_1_.png';
+import p6 from '../../images/Projects/pizzeria_new.png';
+import p7 from '../../images/Projects/travel.png';
 import p8 from '../../images/Projects/to_do.png';
 import p9 from '../../images/Projects/admin_panel.jpg';
 
@@ -91,7 +91,7 @@ class Projects extends React.Component {
                         <Card.Img variant="top" src={p3} />
                         <Card.Body>
                             <Card.Title>testYourself  App</Card.Title>
-                            <Card.Subtitle>React Redux Firebase Material-ui</Card.Subtitle>
+                            <Card.Subtitle>React Redux Firebase</Card.Subtitle>
                             <div className="icon-description">
                                 <div className="social-icons">
                                     <div className="icon">
