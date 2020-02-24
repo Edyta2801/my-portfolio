@@ -1,4 +1,4 @@
-import  React, {Component} from 'react';
+import React, { Component } from 'react';
 import '../styles/App-style.css';
 import '../styles/Responsive.css';
 // import "../styles/Skills.scss";
@@ -75,6 +75,7 @@ class About extends Component {
                                 </Row>
                             </Card.Text>
                         </Card.Body>
+                        <div className="transparent-box"></div>
                     </Card>
                     <Card>
                         <Card.Body>
@@ -110,6 +111,7 @@ class About extends Component {
                                 </Row>
                             </Card.Text>
                         </Card.Body>
+                        <div className="transparent-box"></div>
                     </Card>
                     <Card>
                         <Card.Body>
@@ -131,6 +133,7 @@ class About extends Component {
                                 </Row>
                             </Card.Text>
                         </Card.Body>
+                        <div className="transparent-box"></div>
                     </Card>
                 </CardDeck>
             </div>
