@@ -6,8 +6,8 @@ import MainLayout from './components/MainLayout';
 import Projects from './components/pages/Projects';
 import Contact from './components/pages/Contact';
 import About from './components/pages/About';
-import './components/styles/App-style.css';
-import styles from '../src/components/styles/App.scss';
+import styles from './components/styles/App-style.css';
+
 
 class App extends React.Component {
   render() {
