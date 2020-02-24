@@ -75,7 +75,7 @@ class About extends Component {
                                 </Row>
                             </Card.Text>
                         </Card.Body>
-                        <div className="transparent-box"></div>
+                        <div className="transparent-box one"></div>
                     </Card>
                     <Card>
                         <Card.Body>
@@ -111,7 +111,7 @@ class About extends Component {
                                 </Row>
                             </Card.Text>
                         </Card.Body>
-                        <div className="transparent-box"></div>
+                        <div className="transparent-box two"></div>
                     </Card>
                     <Card>
                         <Card.Body>
@@ -133,7 +133,7 @@ class About extends Component {
                                 </Row>
                             </Card.Text>
                         </Card.Body>
-                        <div className="transparent-box"></div>
+                        <div className="transparent-box three"></div>
                     </Card>
                 </CardDeck>
             </div>
