@@ -1,6 +1,5 @@
- 
-  /*Gallery*/
 
+  /*Projects*/
 
   .icon-description {
       position: absolute;
@@ -33,13 +32,10 @@
   .icon {
       float: right;
       width: 33.333%;
-      /* height: 300px; */
       position: relative;
   }
 
   .icon-description {
-      /* margin-top: 60px; 
-    margin-bottom: 60px; */
       text-align: center;
       display: flex;
       flex-wrap: wrap;
