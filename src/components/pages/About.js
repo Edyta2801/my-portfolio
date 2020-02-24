@@ -38,7 +38,7 @@ class About extends Component {
 
     render() {
         return (
-            <div className="body">
+            <div className="body skills">
                 <CardDeck>
                     <Card>
                         <Card.Body>
@@ -46,29 +46,29 @@ class About extends Component {
                         </Card.Title>
                             <Card.Text>
                                 <Row>
-                                    <Col md={4}>
+                                    <Col md={4} xs={6}>
                                         <FontAwesomeIcon icon={faHtml5} className="skills_icon" />
                                         <span className="skills_lang">HTML</span>
                                     </Col>
-                                    <Col md={4}>
+                                    <Col md={4} xs={6}>
                                         <FontAwesomeIcon icon={faCss3Alt} className="skills_icon" />
                                         <span className="skills_lang">CSS</span>
                                     </Col>
-                                    <Col md={4}>
+                                    <Col md={4} xs={12}>
                                         <FontAwesomeIcon icon={faSass} className="skills_icon" />
                                         <span className="skills_lang">Sass</span>
                                     </Col>
                                 </Row>
                                 <Row>
-                                    <Col md={4}>
+                                    <Col md={4} xs={6}>
                                         <FontAwesomeIcon icon={faBootstrap} className="skills_icon" />
                                         <span className="skills_lang">Bootstrap</span>
                                     </Col>
-                                    <Col md={4}>
+                                    <Col md={4}xs={6}>
                                         <FontAwesomeIcon icon={faJs} className="skills_icon" />
                                         <span className="skills_lang">JavaScript</span>
                                     </Col>
-                                    <Col md={4}>
+                                    <Col md={4} xs={12}>
                                         <FontAwesomeIcon icon={faReact} className="skills_icon" />
                                         <span className="skills_lang">React + Redux</span>
                                     </Col>
@@ -82,29 +82,29 @@ class About extends Component {
                             <Card.Title>Front-End Tools</Card.Title>
                             <Card.Text>
                                 <Row>
-                                    <Col md={4}>
+                                    <Col md={4} xs={6}>
                                         <FontAwesomeIcon icon={faGitAlt} className="skills_icon" />
                                         <span className="skills_lang">Git</span>
                                     </Col>
-                                    <Col md={4}>
+                                    <Col md={4} xs={6}>
                                         <FontAwesomeIcon icon={faNpm} className="skills_icon" />
                                         <span className="skills_lang">npm</span>
                                     </Col>
-                                    <Col md={4}>
+                                    <Col md={4} xs={12}>
                                         <FontAwesomeIcon icon={faYarn} className="skills_icon" />
                                         <span className="skills_lang">Yarn</span>
                                     </Col>
                                 </Row>
                                 <Row>
-                                    <Col md={4}>
+                                    <Col md={4} xs={6}>
                                         <FontAwesomeIcon icon={faJira} className="skills_icon" />
                                         <span className="skills_lang">Jira</span>
                                     </Col>
-                                    <Col md={4}>
+                                    <Col md={4} xs={6}>
                                         <FontAwesomeIcon icon={faSlack} className="skills_icon" />
                                         <span className="skills_lang">Slack</span>
                                     </Col>
-                                    <Col md={4}>
+                                    <Col md={4} xs={12}>
                                         <FontAwesomeIcon icon={faUsers} className="skills_icon" />
                                         <span className="skills_lang">Scrum</span>
                                     </Col>
@@ -118,15 +118,15 @@ class About extends Component {
                             <Card.Title>Learning Now</Card.Title>
                             <Card.Text>
                                 <Row>
-                                    <Col md={4}>
+                                    <Col md={4} xs={6}>
                                         <FontAwesomeIcon icon={faNode} className="skills_icon" />
                                         <span className="skills_lang">Node.js - Express</span>
                                     </Col>
-                                    <Col md={4}>
+                                    <Col md={4} xs={6}>
                                         <FontAwesomeIcon icon={faEnvira} className="skills_icon" />
                                         <span className="skills_lang">MongoDB</span>
                                     </Col>
-                                    <Col md={4}>
+                                    <Col md={4} xs={12}>
                                         <FontAwesomeIcon icon={faLayerGroup} className="skills_icon" />
                                         <span className="skills_lang">Stack MERN</span>
                                     </Col>

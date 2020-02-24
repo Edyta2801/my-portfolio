@@ -159,7 +159,7 @@
 
   .header .speciality {
       font-size: 20px;
-      color: #02CF5D;
+      color: #00cf9f;
       line-height: 36px;
   }
 
@@ -1598,14 +1598,14 @@
       font-size: 13px;
   }
 
-  .col-md-4 {
+  .card-deck .col-md-4 {
       color: #878787;
       text-align: center;
   }
 
-  .card{
-     background:#f5f5f5;
-     color: #878787;
+  .card-deck .card {
+      background: #f5f5f5;
+      color: #878787;
   }
 
   .transparent-box {
@@ -1620,8 +1620,8 @@
       left: 20px;
   }
 
-  .transparent-box:hover{
-      top:0;
-      left:0;
-      cursor:pointer;
+  .transparent-box:hover {
+      top: 0;
+      left: 0;
+      cursor: pointer;
   }
