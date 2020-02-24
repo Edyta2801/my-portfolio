@@ -48,14 +48,14 @@ class Header extends React.Component {
             <div className="overlay mobile">
               <div className="submenus">
                 <div className="work-mobile"><NavLink exact to="/" onClick={this.toggleMenu}>Projects</NavLink></div>
+                <div className="about-mobile"><NavLink exact to="/about"onClick={this.toggleMenu}>Skills</NavLink></div>
                 <div className="articles-mobile"><NavLink exact to="/contact" onClick={this.toggleMenu}>Contact</NavLink></div>
-                <div className="about-mobile"><NavLink exact to="/about"onClick={this.toggleMenu}>About</NavLink></div>
               </div>
             </div>
             <div className="navigation-sub">
               <div className="work"><NavLink exact to="/">Projects</NavLink></div>
+              <div className="about"><NavLink exact to="/about">Skills</NavLink></div>
               <div className="articles"><NavLink exact to="/contact" >Contact</NavLink></div>
-              <div className="about"><NavLink exact to="/about">About</NavLink></div>
             </div>
           </div>
           <div className="speciality">
