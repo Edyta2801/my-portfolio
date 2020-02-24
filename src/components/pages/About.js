@@ -8,7 +8,6 @@ import { Row, Col, Card, CardDeck } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faLayerGroup,
-    faDatabase,
     faUsers
 } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -25,9 +24,7 @@ import {
     faYarn,
     faJira,
     faSlack,
-    faAdobe,
-    faPhp,
-    faLaptopCode,
+
 } from "@fortawesome/free-brands-svg-icons";
 
 
