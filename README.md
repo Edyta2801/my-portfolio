@@ -1,4 +1,13 @@
 
+# my-portfolio
+My portfolio Website
+
+## See [DEMO](https://edytaszarowska-portfolio.herokuapp.com/)
+
+## Technologies
+* React
+* npm
+* Bootstrap
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
