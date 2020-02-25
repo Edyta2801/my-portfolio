@@ -23,7 +23,7 @@ class Contact extends Component {
                             <Col xs={6} md={6}>
                                 <Image src={profile} roundedCircle />
                             </Col>
-                            <Col xs={6} md={6} className='title'>
+                            <Col xs={12} md={6} className='title'>
                                 <span className="about-title"> Feel free to contact me for any inquiries about my portfolio and work opportunities!</span><br /><br />
                             </Col>
                         </Row>
