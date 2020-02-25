@@ -53,7 +53,7 @@ class Projects extends React.Component {
                             <div className="icon-description">
                                 <div className="social-icons">
                                     <div className="icon">
-                                        <a href="https://github.com/Edyta2801/javascript-blog" target="_blank" rel="noopener noreferrer">
+                                        <a href="https://github.com/Edyta2801/potfolio-3" target="_blank" rel="noopener noreferrer">
                                             <Link />
                                         </a>
                                     </div>
