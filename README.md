@@ -1,7 +1,7 @@
 # my-portfolio
 My portfolio Website
 
-## See [DEMO](https://edytaszarowska-portfolio.herokuapp.com/)
+## See [DEMO](https://edyta-szarowska-portfolio.netlify.com/)
 
 ## Technologies
 * React

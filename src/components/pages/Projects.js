@@ -58,7 +58,7 @@ class Projects extends React.Component {
                                         </a>
                                     </div>
                                     <div className="icon">
-                                        <a href="https://edyta-szarowska-portfolio.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                                        <a href="https://edyta-szarowska-portfolio.netlify.com/" target="_blank" rel="noopener noreferrer">
                                             <ZoomIn />
                                         </a>
                                     </div>
