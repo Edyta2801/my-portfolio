@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import '../styles/App-style.css';
 import '../styles/Responsive.css';
 import profile from '../../images/foto.jpg';
-import resume from "../../Edyta_Szarowska_CV_.pdf";
-import { Row, Col, Container, Image, } from "react-bootstrap";
+import resume from"../../Edyta_Szarowska_CV.pdf";
+import { Row, Col, Container, Image, } from 'react-bootstrap';
 
 
 class Contact extends Component {
