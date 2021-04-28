@@ -1,4 +1,14 @@
-img.skills_icon{
-    width:5vw;
+.skills_icon_cypress{
+    width:60px;
 
 }
+
+.skills_lang{
+font-size: 10px;
+display:block
+}
+
+/* @media screen and (max-width: 1009px){
+    .skills_lang{
+       display:block;
+        }} */

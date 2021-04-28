@@ -26,10 +26,10 @@ import {
 
 import Chakra from "../../images/skills/logo-black.svg";
 import Cypress from "../../images/skills/cypress-logo.webp";
-import Jwt from "../../images/skills/logo-jwt.svg";
+import Jwt from "../../images/skills/jwt_logo.svg";
 import Msw from "../../images/skills/msw-logo.svg";
 import Storybook from "../../images/skills/storybook.svg";
-import Swagger from "../../images/skills/sw_full-wt.svg";
+import Swagger from "../../images/skills/swagger_logo.svg";
 
 class About extends Component {
   componentDidMount() {
@@ -121,35 +121,51 @@ class About extends Component {
               <Card.Text>
                 <Row>
                   <Col md={4} xs={6}>
-                    <img className="skills_icon" src={Chakra} alt="Logo of Chakra-ui" />
+                    <img
+                      className="skills_icon"
+                      src={Chakra}
+                      alt="Logo of Chakra-ui"
+                    />
                     {/* <FontAwesomeIcon icon={faNode} className="skills_icon" /> */}
-                    {/* <span className="skills_lang">Node.js - Express</span> */}
+                    <span className="skills_lang">Chakra Ui</span>
                   </Col>
                   <Col md={4} xs={6}>
-                  <img className="skills_icon" src={Jwt} alt="Jason Web Token" />
+                    <img
+                      className="skills_icon"
+                      src={Jwt}
+                      alt="Jason Web Token"
+                    />
                     {/* <FontAwesomeIcon icon={faEnvira} className="skills_icon" /> */}
-                    <span className="skills_lang">Jason Web Token</span> 
+                    <span className="skills_lang">JWT</span>
                   </Col>
                   <Col md={4} xs={12}>
-                  <img className="skills_icon" src={Msw} alt="Mock Service Worker" />
-                    <span className="skills_lang">Mock Svice Worker</span>
+                    <img
+                      className="skills_icon"
+                      src={Storybook}
+                      alt="Storybook"
+                    />
+                    {/* <FontAwesomeIcon icon={faEnvira} className="skills_icon" /> */}
+                    <span className="skills_lang">Storybook</span>
                   </Col>
-                  </Row>
-                  <Row>
+                </Row>
+                <Row>
                   <Col md={4} xs={6}>
-                  <img className="skills_icon" src={Cypress} alt="Cypress" />
-                    {/* <FontAwesomeIcon icon={faEnvira} className="skills_icon" />
-                    <span className="skills_lang">MongoDB</span> */}
+                    <img className="skills_icon_cypress" src={Cypress} alt="Cypress" />
+                    {/* <FontAwesomeIcon icon={faEnvira} className="skills_icon" /> */}
+                    <span className="skills_lang">Cypress</span>
                   </Col>
                   <Col md={4} xs={6}>
-                  <img className="skills_icon" src={Storybook} alt="Cypress" />
-                    {/* <FontAwesomeIcon icon={faEnvira} className="skills_icon" />
-                    <span className="skills_lang">MongoDB</span> */}
+                    <img
+                      className="skills_icon"
+                      src={Msw}
+                      alt="Mock Service Worker"
+                    />
+                    <span className="skills_lang">MSW</span>
                   </Col>
                   <Col md={4} xs={12}>
-                  <img className="skills_icon" src={Swagger} alt="Cypress" />
-                    {/* <FontAwesomeIcon icon={faEnvira} className="skills_icon" />
-                    <span className="skills_lang">MongoDB</span> */}
+                    <img className="skills_icon" src={Swagger} alt="Swagger" />
+                    {/* <FontAwesomeIcon icon={faEnvira} className="skills_icon" /> */}
+                    <span className="skills_lang">Swagger</span>
                   </Col>
                 </Row>
               </Card.Text>
