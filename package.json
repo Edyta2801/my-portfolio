@@ -42,5 +42,9 @@
       "last 5 firefox version",
       "last 5 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/helper-call-delegate": "^7.12.13",
+    "@babel/helper-regex": "^7.10.5"
   }
 }

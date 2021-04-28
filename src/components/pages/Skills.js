@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import "../styles/App-style.css";
 import "../styles/Responsive.css";
-import "../styles/About.css";
+import "../styles/Skills.css";
 //bootstrap
 import { Row, Col, Card, CardDeck } from "react-bootstrap";
 //fontawesome
 // import Image from 'react-bootstrap/Image';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLayerGroup, faUsers } from "@fortawesome/free-solid-svg-icons";
+import { faUsers } from "@fortawesome/free-solid-svg-icons";
 import {
   faHtml5,
   faCss3Alt,
@@ -15,8 +15,6 @@ import {
   faBootstrap,
   faJs,
   faReact,
-  faNode,
-  faEnvira,
   faGitAlt,
   faNpm,
   faYarn,
@@ -31,7 +29,7 @@ import Msw from "../../images/skills/msw-logo.svg";
 import Storybook from "../../images/skills/storybook.svg";
 import Swagger from "../../images/skills/swagger_logo.svg";
 
-class About extends Component {
+class Skills extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }
@@ -150,7 +148,11 @@ class About extends Component {
                 </Row>
                 <Row>
                   <Col md={4} xs={6}>
-                    <img className="skills_icon_cypress" src={Cypress} alt="Cypress" />
+                    <img
+                      className="skills_icon_cypress"
+                      src={Cypress}
+                      alt="Cypress"
+                    />
                     {/* <FontAwesomeIcon icon={faEnvira} className="skills_icon" /> */}
                     <span className="skills_lang">Cypress</span>
                   </Col>
@@ -178,4 +180,4 @@ class About extends Component {
   }
 }
 
-export default About;
+export default Skills;
