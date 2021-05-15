@@ -8,7 +8,7 @@ import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 import { ZoomIn, Link } from 'react-feather';
 import p2 from '../../images/Projects/blog_1.png';
-import p1 from '../../images/Projects/portfolio.jpg';
+import p1 from '../../images/Projects/chat.png';
 import p3 from '../../images/Projects/test.png';
 import p4 from '../../images/Projects/memory_new1.png';
 import p5 from '../../images/Projects/webpage_1_.png';
@@ -46,19 +46,19 @@ class Projects extends React.Component {
             <div className="body">
                 <CardColumns>
                     <Card>
-                        <Card.Img variant="top" src={p1} />
+                        <Card.Img variant="top" src={p1}  />
                         <Card.Body>
-                            <Card.Title>Portfolio webpage</Card.Title>
-                            <Card.Subtitle>React npm Sass Bootstrap </Card.Subtitle>
+                            <Card.Title>Chat-messenger</Card.Title>
+                            <Card.Subtitle>React App, Chakra UI, Firebase </Card.Subtitle>
                             <div className="icon-description">
                                 <div className="social-icons">
                                     <div className="icon">
-                                        <a href="https://github.com/Edyta2801/my-portfolio" target="_blank" rel="noopener noreferrer">
+                                        <a href="https://github.com/Edyta2801/chat-react" target="_blank" rel="noopener noreferrer">
                                             <Link />
                                         </a>
                                     </div>
                                     <div className="icon">
-                                        <a href="https://edyta-szarowska-portfolio.netlify.com/" target="_blank" rel="noopener noreferrer">
+                                        <a href="https://chat-c3e05.web.app" target="_blank" rel="noopener noreferrer">
                                             <ZoomIn />
                                         </a>
                                     </div>
@@ -264,7 +264,7 @@ class Projects extends React.Component {
                         </Card.Body>
                     </Card>
                 </CardColumns>
-            </div >
+            </div>
         );
     }
 }
