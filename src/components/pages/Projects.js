@@ -42,11 +42,13 @@ class Projects extends React.Component {
     return (
       <div className="body">
         <CardColumns>
-          <Card style={{ minHeight: "253.34px" }}>
+          <Card 
+          style={{ minHeight: "253.34px" }}
+          >
             <Card.Img variant="top" src={p1} />
             <Card.Body>
-              <Card.Title>Chat-messenger</Card.Title>
-              <Card.Subtitle>React App, Chakra UI, Firebase </Card.Subtitle>
+              <Card.Title>Chat messager</Card.Title>
+              <Card.Subtitle>React Chakra UI Firebase </Card.Subtitle>
               <div className="icon-description">
                 <div className="social-icons">
                   <div className="icon">
