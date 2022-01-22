@@ -1,1 +1,67 @@
-@media screen and (max-width: 1009px){.body{width:calc(100% - 80px);margin-left:auto;margin-right:auto}.header{margin-top:50px;margin-bottom:50px}.header .navigation .anne,.header .designer{font-size:20px;width:100%;line-height:24px}.header .speciality{font-size:16px;line-height:28px}.navigation .navigation-sub{display:none}.header-project{width:calc(100% - 80px);margin-left:auto;margin-right:auto;padding-top:0}.header-project .anne{display:none}.footer .footer-statement{font-size:14px;line-height:20px;margin:0 auto 11px}.footer .footer-copyright{font-size:12px;line-height:36px;margin:10px auto 0}.about-image{width:100%;height:calc((100vw - 80px) * 0.65);box-shadow:0 0 10px rgba(224,224,224,0.5)}.about-content{margin-top:30px;font-size:14px;line-height:20px}.about-title{font-size:20px}.about-resume a{width:180px;font-size:14px}}@media screen and (min-width: 1010px){.navigation button,.mobile{display:none}}
+@media screen and (max-width: 1009px) {
+  .body {
+    width: calc(100% - 80px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .header .navigation .anne,
+  .header .designer {
+    font-size: 20px;
+    width: 100%;
+    line-height: 24px;
+  }
+  .header .speciality {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .navigation .navigation-sub {
+    display: none;
+  }
+  .header-project {
+    width: calc(100% - 80px);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+  }
+  .header-project .anne {
+    display: none;
+  }
+  .footer .footer-statement {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 auto 11px;
+  }
+  .footer .footer-copyright {
+    font-size: 12px;
+    line-height: 36px;
+    margin: 10px auto 0;
+  }
+  .about-image {
+    width: 100%;
+    height: calc((100vw - 80px) * 0.65);
+    box-shadow: 0 0 10px rgba(224, 224, 224, 0.5);
+  }
+  .about-content {
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .about-title {
+    font-size: 20px;
+  }
+  .about-resume a {
+    width: 180px;
+    font-size: 14px;
+  }
+  .about-figure{text-align: center;}
+}
+@media screen and (min-width: 1010px) {
+  .navigation button,
+  .mobile {
+    display: none;
+  }
+}

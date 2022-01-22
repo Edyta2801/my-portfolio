@@ -31,13 +31,13 @@ class Footer extends Component {
             </a>
           </div>
           <div className="social-last">
-            <a href="mailto:edyta.szarowska@interia.pl" target="_blank" rel="noopener noreferrer">
+            <a href="mailto:edyta.szarowska.dev@gmail.com" target="_blank" rel="noopener noreferrer">
               <img className="email" src={this.state.email} alt="Email Logo"/>
             </a>
           </div>
         </div>
         <div className="footer-copyright">
-          © 2020, Edyta Szarowska
+          © 2022, Edyta Szarowska
         </div>
       </div>
     );
