@@ -2,10 +2,7 @@ import React, { Component } from "react";
 import "../styles/App-style.css";
 import "../styles/Responsive.css";
 import "../styles/Skills.css";
-//bootstrap
-import { Row, Col, Card, CardDeck } from "react-bootstrap";
-//fontawesome
-// import Image from 'react-bootstrap/Image';
+import { Row, Col, Card } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUsers } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -37,7 +34,7 @@ class Skills extends Component {
   render() {
     return (
       <div className="body skills">
-        <CardDeck>
+        <Row xs={1} md={2} className="card-deck">
           <Card>
             <Card.Body>
               <Card.Title>Web Development</Card.Title>
@@ -174,7 +171,7 @@ class Skills extends Component {
             </Card.Body>
             <div className="transparent-box three"></div>
           </Card>
-        </CardDeck>
+        </Row>
       </div>
     );
   }

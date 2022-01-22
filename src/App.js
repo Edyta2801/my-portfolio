@@ -6,6 +6,7 @@ import MainLayout from "./components/MainLayout";
 import Projects from "./components/pages/Projects";
 import Contact from "./components/pages/Contact";
 import Skills from "./components/pages/Skills";
+import About from "./components/pages/About";
 // import styles from "./components/styles/App-style.css";
 
 class App extends React.Component {
@@ -26,8 +27,10 @@ class App extends React.Component {
               transform: `translateY(${styles.offset}px)`,
             })}
           >  */}
-            <Route exact path="/" component={Projects} />
+            <Route exact path="/" component={About} />
+            <Route exact path="/about" component={About} />
             <Route exact path="/projects" component={Projects} />
+
             <Route exact path="/skills" component={Skills} />
             <Route exact path="/contact" component={Contact} />
             {/* </AnimatedSwitch> */}
