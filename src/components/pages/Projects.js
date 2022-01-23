@@ -10,7 +10,7 @@ import { ZoomIn, Link } from "react-feather";
 import p2 from "../../images/Projects/blog_1.png";
 import p1 from "../../images/Projects/chat.png";
 import p3 from "../../images/Projects/test.png";
-import p4 from "../../images/Projects/memory_new1.png";
+import p4 from "../../images/Projects/image_superhero_.jpg";
 import p5 from "../../images/Projects/webpage_1_.png";
 import p6 from "../../images/Projects/pizzeria_new.png";
 import p7 from "../../images/Projects/travel.png";
@@ -42,9 +42,7 @@ class Projects extends React.Component {
     return (
       <div className="body">
         <CardColumns>
-          <Card 
-          style={{ minHeight: "253.34px" }}
-          >
+          <Card style={{ minHeight: "253.34px" }}>
             <Card.Img variant="top" src={p1} />
             <Card.Body>
               <Card.Title>Chat messager</Card.Title>
@@ -137,7 +135,7 @@ class Projects extends React.Component {
                 <div className="social-icons">
                   <div className="icon">
                     <a
-                      href="https://github.com/Edyta2801/jfddl6-testyourself"
+                      href="https://github.com/Edyta2801/superhero-search"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -146,7 +144,7 @@ class Projects extends React.Component {
                   </div>
                   <div className="icon">
                     <a
-                      href="http://www.testyourself.jfddl6.is-academy.pl/thank-you.html"
+                      href="https://superhero-search-app.netlify.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -155,8 +153,8 @@ class Projects extends React.Component {
                   </div>
                 </div>
               </div>
-              <Card.Title>Memory game</Card.Title>
-              <Card.Subtitle>JavaScript OOP </Card.Subtitle>
+              <Card.Title>Superhero search app</Card.Title>
+              <Card.Subtitle>React Axios DarkMode </Card.Subtitle>
             </Card.Body>
             <Card.Img variant="top" src={p4} />
           </Card>

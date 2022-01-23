@@ -1,14 +1,14 @@
-.skills_icon_cypress{
-    width:60px;
-
+.skills_icon_cypress {
+  width: 60px;
 }
 
-.skills_lang{
-font-size: 10px;
-display:block
+.skills_lang {
+  font-size: 10px;
+  display: block;
 }
 
-/* @media screen and (max-width: 1009px){
-    .skills_lang{
-       display:block;
-        }} */
+@media screen and (max-width: 576px) {
+  .card-deck {
+    margin: 0 10%;
+  }
+}

@@ -225,7 +225,7 @@ img.rounded-circle {
 .skills_lang {
   font-size: 13px;
 }
-.card-title{
+.card-title.title-skills{
   color:#ff330d;
 }
 .card-deck .col-md-4 {
