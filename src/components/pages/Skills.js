@@ -37,7 +37,7 @@ class Skills extends Component {
         <Row xs={1} md={2} className="card-deck">
           <Card>
             <Card.Body>
-              <Card.Title>Web Development</Card.Title>
+              <Card.Title className='title-skills'>Web Development</Card.Title>
               <Card.Text>
                 <Row>
                   <Col md={4} xs={6}>
@@ -76,7 +76,7 @@ class Skills extends Component {
           </Card>
           <Card>
             <Card.Body>
-              <Card.Title>Front-End Tools</Card.Title>
+              <Card.Title className='title-skills'>Front-End Tools</Card.Title>
               <Card.Text>
                 <Row>
                   <Col md={4} xs={6}>
@@ -112,7 +112,7 @@ class Skills extends Component {
           </Card>
           <Card>
             <Card.Body>
-              <Card.Title>Learning Now</Card.Title>
+              <Card.Title className='title-skills'>Learning Now</Card.Title>
               <Card.Text>
                 <Row>
                   <Col md={4} xs={6}>
