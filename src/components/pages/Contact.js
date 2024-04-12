@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../styles/App-style.css";
 import "../styles/Responsive.css";
-import resume from "./CV_Edyta Szarowska.pdf";
+import resume from "./CV_E.Szarowska.pdf";
 import { Row, Col, Container } from "react-bootstrap";
 
 class Contact extends Component {
