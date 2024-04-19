@@ -14,8 +14,8 @@ import p4 from "../../images/Projects/image_superhero_.jpg";
 import p5 from "../../images/Projects/webpage_1_.png";
 import p6 from "../../images/Projects/pizzeria_new.png";
 import p7 from "../../images/Projects/travel.png";
-import p8 from "../../images/Projects/to_do.png";
-import p9 from "../../images/Projects/admin_panel.jpg";
+import p8 from "../../images/Projects/e-shop.png";
+import p9 from "../../images/Projects/cms.png";
 
 const images6 = [
   "//res.cloudinary.com/edyta/image/upload/v1582118382/screenshot_1_aa0cew.png",
@@ -42,7 +42,7 @@ class Projects extends React.Component {
     return (
       <div className="body">
         <CardColumns>
-          <Card style={{ minHeight: "253.34px" }}>
+          <Card style={{ minHeight: "244.2px" }}>
             <Card.Img variant="top" src={p1} />
             <Card.Body>
               <Card.Title>Chat messager</Card.Title>
@@ -212,7 +212,7 @@ class Projects extends React.Component {
                 </div>
               </div>
               <Card.Title>Pizzeria App </Card.Title>
-              <Card.Subtitle>JavaScript Sass OOP API</Card.Subtitle>
+              <Card.Subtitle>JavaScript Sass API</Card.Subtitle>
             </Card.Body>
             <Card.Img variant="top" src={p6} />
           </Card>
@@ -266,17 +266,17 @@ class Projects extends React.Component {
                 </div>
               </div>
               <Card.Title>Travel agency App </Card.Title>
-              <Card.Subtitle>React Redux Sass AJAX API</Card.Subtitle>
+              <Card.Subtitle>React Redux Sass API</Card.Subtitle>
             </Card.Body>
           </Card>
           <Card>
-            <Card.Img variant="top" src={p8} />
+            <Card.Img variant="top" src={p8} style={{maxHeight:'155px'}}/>
             <Card.Body>
               <div className="icon-description">
                 <div className="social-icons">
                   <div className="icon">
                     <a
-                      href="https://to-do-app-using-react.herokuapp.com/"
+                      href="https://github.com/Edyta2801/patronage_frontend_"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -285,7 +285,7 @@ class Projects extends React.Component {
                   </div>
                   <div className="icon">
                     <a
-                      href="https://github.com/Edyta2801/to-do-app-using-React"
+                      href="https://patronage-frontend-eshop.vercel.app"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -294,8 +294,8 @@ class Projects extends React.Component {
                   </div>
                 </div>
               </div>
-              <Card.Title>To do App</Card.Title>
-              <Card.Subtitle>React Webpack Npm Sass</Card.Subtitle>
+              <Card.Title>E-commerce</Card.Title>
+              <Card.Subtitle>Next.js TypeScript Redux</Card.Subtitle>
             </Card.Body>
           </Card>
           <Card>
@@ -305,7 +305,7 @@ class Projects extends React.Component {
                 <div className="social-icons">
                   <div className="icon">
                     <a
-                      href="https://github.com/Edyta2801"
+                      href="https://github.com/Edyta2801/patronage22_lublin_js_cms_"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -314,7 +314,7 @@ class Projects extends React.Component {
                   </div>
                   <div className="icon">
                     <a
-                      href="https://res.cloudinary.com/edyta/image/upload/v1582145857/coming-soon_qeqbr6.jpg"
+                      href="https://patronage-cms.netlify.app"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -323,8 +323,8 @@ class Projects extends React.Component {
                   </div>
                 </div>
               </div>
-              <Card.Title>Admin Panel</Card.Title>
-              <Card.Subtitle>JavaScript RWD Sass</Card.Subtitle>
+              <Card.Title>CMS Panel</Card.Title>
+              <Card.Subtitle>React TypeScript Redux</Card.Subtitle>
             </Card.Body>
           </Card>
         </CardColumns>

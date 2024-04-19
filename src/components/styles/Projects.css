@@ -11,6 +11,7 @@
   transition: all 0.4s ease-out;
   transform-origin: 0;
 }
+
 .icon-description:hover {
   padding: 20px;
   display: flex;
@@ -24,22 +25,26 @@
   transition: all 0.4s ease-out;
   transform-origin: 0;
 }
+
 .icon {
   float: right;
   width: 33.333%;
   position: relative;
 }
+
 .icon-description {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
+
 .icon-description .social-icons {
   display: flex;
   justify-content: center;
   width: 100%;
 }
+
 .social-icons a,
 button {
   display: inline-block;
@@ -50,30 +55,40 @@ button {
   text-align: center;
   line-height: 1;
   background: #fff;
-  color:#ff330d ;
+  color: #ff330d;
   border: 2px solid #ff330d;
   border-radius: 100px;
   outline: none;
   font-size: 1.25rem;
   transition: all 0.4s ease-out;
 }
+
 .social-icons svg {
   height: 100%;
 }
+
 .social-icons button:hover {
   background: #ff330d;
   border-color: #ff330d;
-  color:white;
+  color: white;
 }
+
 .social-icons a:hover {
-    background: #ff330d;
-    border-color: #ff330d;
-    color:white;
+  background: #ff330d;
+  border-color: #ff330d;
+  color: white;
 }
+
 .card-columns .card {
   border: 2px solid rgba(0, 0, 0, 0.3);
 }
+
 .card-title,
 .card-subtitle {
   text-align: center;
+}
+
+.card-img-top {
+  max-height: 155px;
+  min-height: 155px;
 }
