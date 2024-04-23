@@ -1,9 +1,27 @@
-.skills_icon_cypress {
+.skills_icon-make {
   width: 60px;
+  height: 15px;
+  filter: contrast(0.3);
+}
+
+.skills_icon-storybook, .skills_icon-node {
+  width: 60px;
+  height: 40px;
+  filter: grayscale(1);
+}
+
+.skills_icon-rest {
+  filter: contrast(0.1);
+  width: 50px;
+}
+
+.skills_icon, .skills_icon-nx {
+  filter: contrast(0.3);
+  width: 50px;
 }
 
 .skills_lang {
-  font-size: 10px;
+  font-size: 9px;
   display: block;
 }
 

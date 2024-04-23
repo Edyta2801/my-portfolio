@@ -4,7 +4,6 @@ import "../styles/Responsive.css";
 import "../styles/Skills.css";
 import { Row, Col, Card } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUsers } from "@fortawesome/free-solid-svg-icons";
 import {
   faHtml5,
   faCss3Alt,
@@ -14,17 +13,20 @@ import {
   faReact,
   faGitAlt,
   faNpm,
-  faYarn,
   faJira,
   faSlack,
 } from "@fortawesome/free-brands-svg-icons";
 
-import Chakra from "../../images/skills/logo-black.svg";
-import Cypress from "../../images/skills/cypress-logo.webp";
-import Jwt from "../../images/skills/jwt_logo.svg";
-import Msw from "../../images/skills/msw-logo.svg";
+import Node from "../../images/skills/node.svg.png";
+import TypeScript from "../../images/skills/ts.webp";
+import Next from "../../images/skills/nextjs.webp";
+import Nx from "../../images/skills/nx.webp";
+import Nest from "../../images/skills/nestjs.webp";
+import Make from "../../images/skills/make.webp";
+import RestApi from "../../images/skills/rest-api-icon.svg";
 import Storybook from "../../images/skills/storybook.svg";
-import Swagger from "../../images/skills/swagger_logo.svg";
+
+
 
 class Skills extends Component {
   componentDidMount() {
@@ -88,8 +90,12 @@ class Skills extends Component {
                     <span className="skills_lang">npm</span>
                   </Col>
                   <Col md={4} xs={12}>
-                    <FontAwesomeIcon icon={faYarn} className="skills_icon" />
-                    <span className="skills_lang">Yarn</span>
+                  <img
+                      className="skills_icon-rest"
+                      src={RestApi}
+                      alt="RestApi"
+                    />
+                    <span className="skills_lang">Rest API</span>
                   </Col>
                 </Row>
                 <Row>
@@ -102,8 +108,12 @@ class Skills extends Component {
                     <span className="skills_lang">Slack</span>
                   </Col>
                   <Col md={4} xs={12}>
-                    <FontAwesomeIcon icon={faUsers} className="skills_icon" />
-                    <span className="skills_lang">Scrum</span>
+                  <img
+                      className="skills_icon-storybook"
+                      src={Storybook}
+                      alt="Storybook"
+                    />
+                    <span className="skills_lang">Storybook</span>
                   </Col>
                 </Row>
               </Card.Text>
@@ -117,54 +127,54 @@ class Skills extends Component {
                 <Row>
                   <Col md={4} xs={6}>
                     <img
-                      className="skills_icon"
-                      src={Chakra}
-                      alt="Logo of Chakra-ui"
+                      className="skills_icon-node"
+                      src={Node}
+                      alt="Logo of Node.js"
                     />
                     {/* <FontAwesomeIcon icon={faNode} className="skills_icon" /> */}
-                    <span className="skills_lang">Chakra Ui</span>
+                    <span className="skills_lang">Node.js</span>
                   </Col>
                   <Col md={4} xs={6}>
                     <img
                       className="skills_icon"
-                      src={Jwt}
-                      alt="Jason Web Token"
+                      src={Next}
+                      alt="Next.js"
                     />
                     {/* <FontAwesomeIcon icon={faEnvira} className="skills_icon" /> */}
-                    <span className="skills_lang">JWT</span>
+                    <span className="skills_lang">Next.js</span>
                   </Col>
                   <Col md={4} xs={12}>
                     <img
-                      className="skills_icon"
-                      src={Storybook}
-                      alt="Storybook"
+                      className="skills_icon-nx"
+                      src={Nx}
+                      alt="Nx"
                     />
                     {/* <FontAwesomeIcon icon={faEnvira} className="skills_icon" /> */}
-                    <span className="skills_lang">Storybook</span>
+                    <span className="skills_lang">Nx</span>
                   </Col>
                 </Row>
                 <Row>
                   <Col md={4} xs={6}>
                     <img
-                      className="skills_icon_cypress"
-                      src={Cypress}
-                      alt="Cypress"
+                      className="skills_icon"
+                      src={TypeScript}
+                      alt="TypeScript"
                     />
                     {/* <FontAwesomeIcon icon={faEnvira} className="skills_icon" /> */}
-                    <span className="skills_lang">Cypress</span>
+                    <span className="skills_lang">TypeScript</span>
                   </Col>
                   <Col md={4} xs={6}>
                     <img
                       className="skills_icon"
-                      src={Msw}
-                      alt="Mock Service Worker"
+                      src={Nest}
+                      alt="Nest.js"
                     />
-                    <span className="skills_lang">MSW</span>
+                    <span className="skills_lang">Nest.js</span>
                   </Col>
                   <Col md={4} xs={12}>
-                    <img className="skills_icon" src={Swagger} alt="Swagger" />
+                    <img className="skills_icon-make" src={Make} alt="Make" />
                     {/* <FontAwesomeIcon icon={faEnvira} className="skills_icon" /> */}
-                    <span className="skills_lang">Swagger</span>
+                    <span className="skills_lang">Make</span>
                   </Col>
                 </Row>
               </Card.Text>

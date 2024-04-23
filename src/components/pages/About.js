@@ -20,8 +20,9 @@ class About extends Component {
                 <hr />
                 <span className="about-title">
                   {" "}
-                  I'm coding enthusiast :) My motto is "Only if you try will you
-                  find out that you can".
+                  <h6>I'm coding enthusiast :)</h6>
+                  My motto is 
+                  <br/><b>"If you just try, you will find out that you can."</b>
                 </span>
                 <br />
                 <br />

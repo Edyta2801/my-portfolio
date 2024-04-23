@@ -37,7 +37,7 @@ class Footer extends Component {
           </div>
         </div>
         <div className="footer-copyright">
-          © 2022, Edyta Szarowska
+          © 2024, Edyta Szarowska
         </div>
       </div>
     );
