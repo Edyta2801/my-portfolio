@@ -41,6 +41,35 @@ class Projects extends React.Component {
     return (
       <div className="body">
         <CardColumns>
+        <Card>
+            <Card.Img variant="top" src={p3} />
+            <Card.Body>
+              <Card.Title>Moje Wydatki</Card.Title>
+              <Card.Subtitle>React Google SpredSheets</Card.Subtitle>
+              <div className="icon-description">
+                <div className="social-icons">
+                  <div className="icon">
+                    <a
+                      href="https://github.com/Edyta2801/React-App-and-Google-SpreadSheets"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Link />
+                    </a>
+                  </div>
+                  <div className="icon">
+                    <a
+                      href="https://moje-wydatki.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <ZoomIn />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </Card.Body>
+          </Card>
           <Card style={{ minHeight: "244.2px" }}>
             <Card.Img variant="top" src={p1} />
             <Card.Body>
@@ -99,35 +128,7 @@ class Projects extends React.Component {
               </div>
             </Card.Body>
           </Card>
-          <Card>
-            <Card.Img variant="top" src={p3} />
-            <Card.Body>
-              <Card.Title>Moje Wydatki</Card.Title>
-              <Card.Subtitle>React Google SpredSheets</Card.Subtitle>
-              <div className="icon-description">
-                <div className="social-icons">
-                  <div className="icon">
-                    <a
-                      href="https://github.com/Edyta2801/React-App-and-Google-SpreadSheets"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Link />
-                    </a>
-                  </div>
-                  <div className="icon">
-                    <a
-                      href="https://moje-wydatki.netlify.app/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <ZoomIn />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </Card.Body>
-          </Card>
+          
           <Card>
             <Card.Body>
               <div className="icon-description">
