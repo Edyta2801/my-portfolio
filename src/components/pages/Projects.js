@@ -4,7 +4,7 @@ import "../styles/Projects.css";
 import linkedin from "../../images/linkedin-logo.png";
 import github from "../../images/GitHub-logo.png";
 import "../../components/styles/Responsive.css";
-import Lightbox from "react-image-lightbox";
+// import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 import { ZoomIn, Link } from "react-feather";
 import p2 from "../../images/Projects/blog_1.png";
@@ -17,12 +17,12 @@ import p7 from "../../images/Projects/travel.png";
 import p8 from "../../images/Projects/e-shop.png";
 import p9 from "../../images/Projects/cms.png";
 
-const images6 = [
-  "//res.cloudinary.com/edyta/image/upload/v1713866456/main_ri0uwv.png",
-  "//res.cloudinary.com/edyta/image/upload/v1713866457/home_u0hlkj.png",
-  "//res.cloudinary.com/edyta/image/upload/v1713866456/jobs_rstluy.png",
-  "//res.cloudinary.com/edyta/image/upload/v1713866457/candidates_ryldlq.png",
-];
+// const images6 = [
+//   "//res.cloudinary.com/edyta/image/upload/v1713866456/main_ri0uwv.png",
+//   "//res.cloudinary.com/edyta/image/upload/v1713866457/home_u0hlkj.png",
+//   "//res.cloudinary.com/edyta/image/upload/v1713866456/jobs_rstluy.png",
+//   "//res.cloudinary.com/edyta/image/upload/v1713866457/candidates_ryldlq.png",
+// ];
 
 class Projects extends React.Component {
   constructor(props) {
@@ -36,7 +36,7 @@ class Projects extends React.Component {
     };
   }
   render() {
-    const { photoIndex, isOpen } = this.state;
+    // const { photoIndex, isOpen } = this.state;
 
     return (
       <div className="body">
