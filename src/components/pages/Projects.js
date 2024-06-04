@@ -42,24 +42,22 @@ class Projects extends React.Component {
       <div className="body">
         <CardColumns>
         <Card>
-            <Card.Img variant="top" src={p3} />
+        <Card.Img variant="top" src={p5} />
             <Card.Body>
-              <Card.Title>Moje Wydatki</Card.Title>
-              <Card.Subtitle>React Google SpredSheets</Card.Subtitle>
               <div className="icon-description">
                 <div className="social-icons">
                   <div className="icon">
                     <a
-                      href="https://github.com/Edyta2801/React-App-and-Google-SpreadSheets"
+                      href="https://github.com/Edyta2801/HR-dashboard"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <Link />
-                    </a>
+                      </a>
                   </div>
                   <div className="icon">
                     <a
-                      href="https://moje-wydatki.netlify.app/"
+                      href="https://hr-analytics-dashboard.netlify.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -68,8 +66,53 @@ class Projects extends React.Component {
                   </div>
                 </div>
               </div>
+              <Card.Title>HR Analytics </Card.Title>
+              <Card.Subtitle>React TypeScript Axios</Card.Subtitle>
             </Card.Body>
           </Card>
+
+                    {/* </a>
+                  </div>
+                  <div className="icon">
+                    <button
+                      type="button"
+                      onClick={() => this.setState({ isOpen: true })}
+                    >
+                      <ZoomIn />
+                    </button>
+
+                    {isOpen && (
+                      <Lightbox
+                        mainSrc={images6[photoIndex]}
+                        nextSrc={images6[(photoIndex + 1) % images6.length]}
+                        prevSrc={
+                          images6[
+                            (photoIndex + images6.length - 1) % images6.length
+                          ]
+                        }
+                        onCloseRequest={() => this.setState({ isOpen: false })}
+                        onMovePrevRequest={() =>
+                          this.setState({
+                            photoIndex:
+                              (photoIndex + images6.length - 1) %
+                              images6.length,
+                          })
+                        }
+                        onMoveNextRequest={() =>
+                          this.setState({
+                            photoIndex: (photoIndex + 1) % images6.length,
+                          })
+                        }
+                      />
+                    )}
+                  </div>
+                </div>
+              </div>
+              <Card.Title>HR Analytics </Card.Title>
+              <Card.Subtitle>React TypeScript Axios</Card.Subtitle>
+            </Card.Body>
+          </Card> */}
+        
           <Card style={{ minHeight: "244.2px" }}>
             <Card.Img variant="top" src={p1} />
             <Card.Body>
@@ -160,11 +203,13 @@ class Projects extends React.Component {
           </Card>
           <Card>
             <Card.Body>
+              <Card.Title>Moje Wydatki</Card.Title>
+              <Card.Subtitle>React Google SpredSheets</Card.Subtitle>
               <div className="icon-description">
                 <div className="social-icons">
                   <div className="icon">
                     <a
-                      href="https://github.com/Edyta2801/HR-dashboard"
+                      href="https://github.com/Edyta2801/React-App-and-Google-SpreadSheets"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -172,44 +217,18 @@ class Projects extends React.Component {
                     </a>
                   </div>
                   <div className="icon">
-                    <button
-                      type="button"
-                      onClick={() => this.setState({ isOpen: true })}
+                    <a
+                      href="https://moje-wydatki.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <ZoomIn />
-                    </button>
-
-                    {isOpen && (
-                      <Lightbox
-                        mainSrc={images6[photoIndex]}
-                        nextSrc={images6[(photoIndex + 1) % images6.length]}
-                        prevSrc={
-                          images6[
-                            (photoIndex + images6.length - 1) % images6.length
-                          ]
-                        }
-                        onCloseRequest={() => this.setState({ isOpen: false })}
-                        onMovePrevRequest={() =>
-                          this.setState({
-                            photoIndex:
-                              (photoIndex + images6.length - 1) %
-                              images6.length,
-                          })
-                        }
-                        onMoveNextRequest={() =>
-                          this.setState({
-                            photoIndex: (photoIndex + 1) % images6.length,
-                          })
-                        }
-                      />
-                    )}
+                    </a>
                   </div>
                 </div>
               </div>
-              <Card.Title>HR Analytics </Card.Title>
-              <Card.Subtitle>React TypeScript Axios</Card.Subtitle>
             </Card.Body>
-            <Card.Img variant="top" src={p5} />
+            <Card.Img variant="top" src={p3} />
           </Card>
           <Card>
             <Card.Body>
